@@ -51,27 +51,26 @@
         <button data-modal-close type="button" class="modal-close-btn">
           cross-icon
         </button>
-        <p>But Now</p>
+        <p><span class="modal-title-buy">Buy</span> Now</p>
         <div class="modal-img">
-          <p class="modal-title">Personal information</p>
           <ul>
             <li>
-              <img src="" alt="" />
-              <div>100 g</div>
+              <img src="" alt="1" />
+              <div class="modal-position-weight">100 g</div>
             </li>
             <li>
-              <img src="" alt="" />
-              <div>200 g</div>
+              <img src="" alt="2" />
+              <div class="modal-position-weight">200 g</div>
             </li>
             <li>
-              <img src="" alt="" />
-              <div>300 g</div>
+              <img src="" alt="3" />
+              <div class="modal-position-weight">300 g</div>
             </li>
             <div></div>
           </ul>
         </div>
 
-        <form action="action" class="modal-form">
+        <form class="modal-form">
           <div class="modal-section">
             <label class="modal-form-label"
               >Presonal information
@@ -81,13 +80,15 @@
                 id="name"
                 class="modal-form-input"
                 placeholder="Name"
+                required
               />
               <input
                 type="text"
                 name="surname"
-                id="sername"
+                id="surname"
                 class="modal-form-input"
                 placeholder="Surname"
+                required
               />
             </label>
           </div>
@@ -109,22 +110,29 @@
               type="tel"
               name="tel"
               id="tel"
-              class="modal-form-input"
+              class="modal-form-input modal-tel-input"
               placeholder="Phone number"
+              required
             />
+            <svg class="modal-tel-svg" width="8" height="10">
+              <use href="../img/sprite.svg#brbrbr"></use>
+            </svg>
           </div>
 
           <div class="modal-section">
             <label for="card" class="modal-form-label">Card number</label>
             <input
               type="number"
-              name="card-number"
+              name="card-number card-number-svg"
               id="card"
               class="modal-form-input"
               placeholder="Enter card"
+              required
             />
+            <svg class="modal-tel-svg" width="8" height="10">
+              <use href="../img/sprite.svg#card"></use>
+            </svg>
           </div>
-
           <div class="modal-section">
             <label for="comment" class="modal-form-label">Comment</label>
             <textarea
@@ -133,7 +141,6 @@
               id="comment"
               class="modal-form-input"
               placeholder="Enter test"
-              required
             ></textarea>
           </div>
 
