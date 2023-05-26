@@ -1,106 +1,109 @@
-    <!-- Modal Window -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="buy-modal">
-        <button data-modal-close type="button" class="buy-modal-close-btn">
-          cross-icon
-        </button>
-        <p><span class="buy-modal-title-buy">Buy</span> Now</p>
-        <div class="buy-modal-img">
-          <ul>
-            <li>
-              <img src="" alt="1" />
-              <div class="buy-modal-position-weight">100 g</div>
-            </li>
-            <li>
-              <img src="" alt="2" />
-              <div class="buy-modal-position-weight">200 g</div>
-            </li>
-            <li>
-              <img src="" alt="3" />
-              <div class="buy-modal-position-weight">300 g</div>
-            </li>
-            <div></div>
-          </ul>
-        </div>
+<!-- Modal Window -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="buy-modal">
+    <button data-modal-close type="button" class="buy-modal-close-btn">
+      <svg class="cross-icon" width="12" height="12">
+        <use href="../../img/sprite.svg#cross-icon"></use>
+      </svg>
+    </button>
+    <p class="buy-modal-title-buy"><span>Buy</span> Now</p>
 
-        <form class="buy-modal-form">
-          <div class="buy-modal-section">
-            <label class="buy-modal-form-label"
-              >Presonal information
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="buy-modal-form-input"
-                placeholder="Name"
-                required
-              />
-              <input
-                type="text"
-                name="surname"
-                id="surname"
-                class="buy-modal-form-input"
-                placeholder="Surname"
-                required
-              />
-            </label>
-          </div>
-
-          <div class="buy-modal-section">
-            <label for="email" class="buy-modal-form-label">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="buy-modal-form-input"
-              placeholder="Enter your email"
-            />
-          </div>
-
-          <div class="buy-modal-section">
-            <label for="tel" class="buy-modal-form-label">Phone number</label>
-            <input
-              type="tel"
-              name="tel"
-              id="tel"
-              class="buy-modal-form-input modal-tel-input"
-              placeholder="Phone number"
-              required
-            />
-            <svg class="buy-modal-tel-svg" width="8" height="10">
-              <use href="../img/sprite.svg#brbrbr"></use>
-            </svg>
-          </div>
-
-          <div class="buy-modal-section">
-            <label for="card" class="buy-modal-form-label">Card number</label>
-            <input
-              type="number"
-              name="card-number card-number-svg"
-              id="card"
-              class="buy-modal-form-input"
-              placeholder="Enter card"
-              required
-            />
-            <svg class="buy-modal-tel-svg" width="8" height="10">
-              <use href="../img/sprite.svg#card"></use>
-            </svg>
-          </div>
-          <div class="buy-modal-section">
-            <label for="comment" class="buy-modal-form-label">Comment</label>
-            <textarea
-              rows="5"
-              name="comment"
-              id="comment"
-              class="buy-modal-form-input"
-              placeholder="Enter test"
-            ></textarea>
-          </div>
-
-          <button type="submit" class="buy-modal-submit-btn">
-            <span>Submit</span>
-          </button>
-        </form>
-      </div>
+    <div class="buy-modal-top">
+      <ul class="buy-modal-top-list">
+        <li class="buy-modal-top-item">
+          <img src="../../img/modal_buy_now/nuts.jpg" alt="1" />
+          <div class="buy-modal-position-weight">100 g</div>
+        </li>
+        <li class="buy-modal-top-item">
+          <img src="../../img/modal_buy_now/praline.jpg" alt="2" />
+          <div class="buy-modal-position-weight">200 g</div>
+        </li>
+        <li class="buy-modal-top-item">
+          <img src="../../img/modal_buy_now/chocolate.jpg" alt="3" />
+          <div class="buy-modal-position-weight">300 g</div>
+        </li>
+        <div></div>
+      </ul>
     </div>
-    <script src="../../js/modal.js"></script>
+
+    <form class="buy-modal-form">
+      <div class="buy-modal-section">
+        <label class="buy-modal-form-label"
+          >Presonal information
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="buy-modal-form-input"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            class="buy-modal-form-input"
+            placeholder="Surname"
+            required
+          />
+        </label>
+      </div>
+
+      <div class="buy-modal-section">
+        <label for="email" class="buy-modal-form-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="buy-modal-form-input"
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div class="buy-modal-section">
+        <label for="tel" class="buy-modal-form-label">Phone number</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          class="buy-modal-form-input modal-tel-input"
+          placeholder="Phone number"
+          required
+        />
+        <svg class="buy-modal-tel-svg" width="20" height="25">
+          <use href="../../img/sprite.svg#icon-Mastercard"></use>
+        </svg>
+      </div>
+
+      <div class="buy-modal-section">
+        <label for="card" class="buy-modal-form-label">Card number</label>
+        <input
+          type=""
+          name="card-number card-number-svg"
+          id="card"
+          class="buy-modal-form-input"
+          placeholder="Enter card"
+          required
+        />
+        <svg class="buy-modal-tel-svg" width="20" height="30">
+          <use href="../../img/sprite.svg#icon-UkrFlag"></use>
+        </svg>
+      </div>
+      <div class="buy-modal-section">
+        <label for="comment" class="buy-modal-form-label">Comment</label>
+        <textarea
+          rows="5"
+          name="comment"
+          id="comment"
+          class="buy-modal-form-input"
+          placeholder="Enter test"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="buy-modal-submit-btn">
+        <span>Submit</span>
+      </button>
+    </form>
+  </div>
+</div>
+<script src="../../js/modal.js"></script>
