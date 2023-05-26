@@ -1,0 +1,82 @@
+.hero-section {}
+
+.hero-container {
+    border-radius: 15px;
+    max-width: 335px;
+    min-height: 620px;
+    max-height: 620px;
+    background-image: url(../img/hero/chocolate-hero1x.jpg), linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%);
+}
+
+.hero-container-btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 395px 0px 20px 0px;
+}
+
+.hero-hidden-title {}
+
+.hero-paragraph {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: var(--snow-white);
+    margin-bottom: 32px;
+}
+
+.hero-btns-div {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.buy-modal-btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--snow-white);
+}
+
+.hero-ahchor-button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--snow-white);
+}
+
+.hero-scroll-button {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    color: var(--snow-white);
+}
+
+.test-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    background-color: var(--snow-white);
+}
+
+.hero-scroll-icon {
+    fill: var(--brand-color);
+    background-color: var(--snow-white);
+    border-radius: 50%;
+}
