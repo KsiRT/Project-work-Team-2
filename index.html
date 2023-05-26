@@ -7,7 +7,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/Project-work-Team-2/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-2fbcfacb.css">
+    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-99552267.css">
   </head>
   <body>
     <!--! Loads the specified .html file !-->
@@ -193,7 +193,9 @@
     
     <section class="reviews">
   <div class="reviews-container">
-    <h2 class="review-title"><span>Chocolate</span> is loved</h2>
+    <h2 class="review-title">
+      <span class="orang-text">Chocolate</span> is loved
+    </h2>
     <ul class="reviews-cards">
       <li class="reviews-card">
         <img
@@ -296,7 +298,52 @@
 
     <!-- ? MODAL WINDOWS -->
     
-    
+    <div class="backdrop">
+  <div class="review-modal">
+    <button type="button" class="modal-close-btn">
+      <svg class="modal-close-icon" width="28" height="28">
+        <use href="/Project-work-Team-2/assets/sprite-bfb9b78e.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="review-modal-title">
+      Leave a review about <span>our chocolate</span>
+    </h2>
+    <form class="review-modal-form" autocomplete="off" name="review-modal-form">
+      <input
+        class="review-form-input"
+        name="user_name"
+        id="review-form-name"
+        type="text"
+        pattern="[a-zA-Zа-яА-Я]+"
+        required
+      />
+      <input
+        class="review-form-input"
+        name="user_email"
+        id="review-form-email"
+        type="email"
+      />
+      <span class="user-phone-container"
+        ><input
+          class="review-form-input"
+          name="user_phone"
+          id="review-form-phone"
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="380-111-11-11"
+          required
+      /></span>
+      <textarea
+        class="review-form-message"
+        placeholder="Text input"
+        name="user_comment"
+        id="review-form-comment"
+      ></textarea>
+      <button type="submit" class="review-form-submit-btn">Send</button>
+    </form>
+  </div>
+</div>
+
     
     
   </body>
