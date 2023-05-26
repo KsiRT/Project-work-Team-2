@@ -6,16 +6,52 @@ body:nth-last-child(1) {
 } */
 
 .sellers-section {
+  margin: 0 auto;
 }
 .sellers-container {
 }
 .sellers-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
-.sellers-list {
+
+.sellers-title span {
+  color: #fd9222;
+}
+
+.sellers-list img {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .sellers-item {
+  margin-bottom: 32px;
 }
 .sellers-item-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 .sellers-modal-but-now {
+  margin: 0 auto;
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: white;
+  background-color: #fd9222;
+  border: none;
+  border-radius: 100px;
+  min-width: 120px;
+  min-height: 41px;
+  margin-bottom: 72px;
 }
