@@ -1,0 +1,48 @@
+.header-section {
+    background-color: #FAFAFA;
+    min-width: 375px;
+    max-height: 28px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    max-height: 28px;
+    /* padding-right: 20px;
+    padding-left: 20px; */
+}
+
+.header-navigation {}
+
+.header-logo {
+    display: flex;
+}
+
+.header-logo-span {}
+
+.header-logo-svg {}
+
+.header-burger-button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.header-burger-icon {
+    stroke: #111111;
+}
+
+.mob-menu {}
+
+.mob-menu-container {}
+
+.mob-menu-close-icon {}
+
+.mob-menu-nav-list {}
+
+.mob-menu-nav-item {}
+
+.mob-menu-soc-list {}
+
+.mob-menu-soc-item {}
+
+.mob-menu-soc-icon {}
