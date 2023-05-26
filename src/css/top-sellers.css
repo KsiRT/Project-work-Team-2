@@ -1,0 +1,6 @@
+body {
+  float: inline-end;
+}
+
+body:nth-last-child(1) {
+}
