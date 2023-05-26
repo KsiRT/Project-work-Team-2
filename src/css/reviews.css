@@ -1,6 +1,11 @@
-/* .reviews {
-  background-color: aqua;
-} */
+.reviews {
+  background-color: #e2e2e2;
+}
+.reviews-container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
 .review-title {
   font-weight: 600;
   font-size: 20px;
@@ -13,14 +18,13 @@
 .orang-text {
   color: #fd9222;
 }
-.reviews-cards {
-  margin-bottom: 32px;
-  display: flex;
+.reviews-cards-container {
+  max-width: 335px;
 }
 .reviews-card {
   box-sizing: border-box;
-  display: block;
   max-width: 335px;
+  height: 100%;
   position: relative;
   text-align: center;
   padding: 0 18px 42px;
@@ -34,7 +38,7 @@
   width: 100%;
   z-index: -1;
   height: calc(100% - 40px);
-  background-color: gray;
+  background-color: #ffffff;
   border-radius: 15px;
 }
 .reviews-card-img {
@@ -52,7 +56,25 @@
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
 }
-
+/* ======================SWIPER-SLIDER-STYLES============================== */
+.swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+.reviews-cards-container .swiper-pagination-bullet {
+  bottom: 0;
+  width: 13px;
+  height: 13px;
+  background-color: rgb(17, 17, 17);
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 7px;
+}
+.reviews-cards-container .swiper-pagination-bullet-active {
+  background-color: #fd9222;
+}
+/* ============================================================== */
 .review-btn {
   display: block;
   margin: 0 auto;
@@ -60,4 +82,33 @@
   border: 1px solid #fd9222;
   border-radius: 100px;
   background-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-btn:hover,
+.review-btn:focus {
+  color: #ffffff;
+  background-color: #fd9222;
+}
+@media screen and (min-width: 768px) {
+  .reviews-container {
+    max-width: 704px;
+  }
+  .reviews-cards-container {
+    max-width: 704px;
+  }
+  .reviews-card {
+    max-width: 344px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews-container {
+    max-width: 1200px;
+  }
+  .reviews-cards-container {
+    max-width: 1136px;
+  }
+  .reviews-card {
+    max-width: 360px;
+  }
 }
