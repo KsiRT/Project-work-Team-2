@@ -5,24 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/top-sellers.css" />
   </head>
   <body>
-    <section>
+    <section class="sellers-section">
       <div class="sellers-container">
-        <h2></h2>
-        <ul>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li>
-            <p></p>
+        <h2 class="sellers-title"><span>Top</span> Sellers</h2>
+        <ul class="sellers-list">
+          <li class="sellers-item">
+            <img src="" alt="" />
+            <p class="sellers-item-text">
+              Crazy enough chocolate originates from a bean just like the coffee
+              bean called Cacao. Cacao has been around for thousands of years
+              and was first discovered by the Native American tribe called the
+              Mayans.
+            </p>
           </li>
+          <li class="sellers-item"><img src="" alt="" /></li>
+          <li class="sellers-item"><img src="" alt="" /></li>
         </ul>
 
-        <button type="button">Buy now</button>
+        <button data-modal-open type="button" class="sellers-modal-but-now">
+          Buy now
+        </button>
       </div>
     </section>
 
-    <script></script>
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close type="button" class="modal-close-btn">
+          cross-icon
+        </button>
+        <p>But Now</p>
+        <div class="modal-img">
+          <p class="modal-title">Personal information</p>
+          <ul>
+            <li>
+              <img src="" alt="" />
+              <div>100 g</div>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <div>200 g</div>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <div>300 g</div>
+            </li>
+            <div></div>
+          </ul>
+        </div>
+
+        <form action="action" class="modal-form">
+          <div class="modal-section">
+            <label class="modal-form-label"
+              >Presonal information
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="modal-form-input"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                name="surname"
+                id="sername"
+                class="modal-form-input"
+                placeholder="Surname"
+              />
+            </label>
+          </div>
+
+          <div class="modal-section">
+            <label for="email" class="modal-form-label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="modal-form-input"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="modal-section">
+            <label for="tel" class="modal-form-label">Phone number</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              class="modal-form-input"
+              placeholder="Phone number"
+            />
+          </div>
+
+          <div class="modal-section">
+            <label for="card" class="modal-form-label">Card number</label>
+            <input
+              type="number"
+              name="card-number"
+              id="card"
+              class="modal-form-input"
+              placeholder="Enter card"
+            />
+          </div>
+
+          <div class="modal-section">
+            <label for="comment" class="modal-form-label">Comment</label>
+            <textarea
+              rows="5"
+              name="comment"
+              id="comment"
+              class="modal-form-input"
+              placeholder="Enter test"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="modal-submit-btn">
+            <span>Submit</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="../js/modal.js"></script>
   </body>
 </html>
