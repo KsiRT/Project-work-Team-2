@@ -27,26 +27,26 @@
     </div>
 
     <form class="buy-modal-form">
-      <div class="buy-modal-section">
-        <label class="buy-modal-form-label"
-          >Presonal information
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="buy-modal-form-input"
-            placeholder="Name"
-            required
-          />
-          <input
-            type="text"
-            name="surname"
-            id="surname"
-            class="buy-modal-form-input"
-            placeholder="Surname"
-            required
-          />
-        </label>
+      <div class="buy-modal-section buy-modal-personal-info">
+        <label for="name" class="buy-modal-form-label"
+          >Presonal information</label
+        >
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="buy-modal-form-input"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="text"
+          name="surname"
+          id="surname"
+          class="buy-modal-form-input"
+          placeholder="Surname"
+          required
+        />
       </div>
 
       <div class="buy-modal-section">
@@ -70,9 +70,12 @@
           placeholder="Phone number"
           required
         />
-        <svg class="buy-modal-tel-svg" width="20" height="25">
-          <use href="../../img/sprite.svg#icon-Mastercard"></use>
-        </svg>
+        <div class="buy-modal-tel-box">
+          <svg class="buy-modal-tel-svg" width="20" height="25">
+            <use href="../../img/sprite.svg#icon-Mastercard"></use>
+          </svg>
+          <p>+380</p>
+        </div>
       </div>
 
       <div class="buy-modal-section">
@@ -89,6 +92,7 @@
           <use href="../../img/sprite.svg#icon-UkrFlag"></use>
         </svg>
       </div>
+
       <div class="buy-modal-section">
         <label for="comment" class="buy-modal-form-label">Comment</label>
         <textarea
