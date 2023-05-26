@@ -1,0 +1,115 @@
+body {
+  font-size: 14px;
+  line-height: 1.21;
+  background-color: var(--white-bg);
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  /* outline: 2px violet dotted; */
+  /* overflow: hidden; */
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  font-style: normal;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.accent {
+  color: var(--brand-color);
+}
+
+/* * ========= Testing environment + button classes ============ * */
+
+.test {
+  background-color: grey;
+  padding: 20px 20px;
+}
+.orng-btn {
+  background-color: var(--brand-color);
+  border: none;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 100px;
+  color: white;
+
+  min-width: 120px;
+  min-height: 41px;
+}
+
+.orng-btn:hover,
+.orng-btn:focus {
+  background-color: var(--btn-hover);
+  color: var(--brand-color);
+}
+@media screen and (min-width: 768px) {
+  .orng-btn {
+    padding: 14px 40px;
+    min-width: 144px;
+    min-height: 45px;
+  }
+}
+/* ========================================= */
+.transp-btn {
+  background-color: transparent;
+  border: 1px solid var(--snow-white);
+  font-weight: 600;
+  padding: 12px 28px;
+  color: var(--snow-white);
+  border-radius: 100px;
+
+  min-width: 159px;
+  min-height: 41px;
+}
+
+.transp-btn:hover,
+.transp-btn:focus {
+  border-color: var(--brand-color);
+  color: var(--brand-color);
+}
+
+@media screen and (min-width: 768px) {
+  .transp-btn {
+    padding: 14px 40px;
+    min-width: 183px;
+    min-height: 45px;
+  }
+}
+/* ========================================= */
+.tr-orng-btn {
+  background-color: transparent;
+  border: 1px solid var(--brand-color);
+  font-weight: 600;
+  padding: 12px 28px;
+  color: var(--primary-black);
+  border-radius: 100px;
+
+  min-width: 165px;
+  min-height: 41px;
+}
+.tr-orng-btn:hover,
+.tr-orng-btn:focus {
+  background-color: var(--brand-color);
+  color: var(--snow-white);
+}
+
+@media screen and (min-width: 768px) {
+  .tr-orng-btn {
+    font-size: 18px;
+    padding: 14px 40px;
+    min-width: 222px;
+    min-height: 50px;
+  }
+}

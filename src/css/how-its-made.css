@@ -1,0 +1,42 @@
+.recept-section {
+  padding: 72px 20px;
+}
+.recept-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.recept-pic {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.recept-container {
+  display: block;
+  background-color: var(--snow-white);
+  padding: 20px 14px;
+  border-radius: 15px;
+}
+.recept-paragraph {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--primary-black);
+  margin-bottom: 20px;
+}
+.recept-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  list-style: disc;
+  padding-left: 16px;
+}
+
+.recept-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--primary-black);
+}
