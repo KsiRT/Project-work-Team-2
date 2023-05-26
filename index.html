@@ -11,7 +11,7 @@
     />
     
     <script type="module" crossorigin src="/Project-work-Team-2/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-b3d6dadf.css">
+    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-664a6186.css">
   </head>
   <body>
     <!--! Loads the specified .html file !-->
@@ -25,17 +25,19 @@
         </svg>
       </a>
     </nav>
-    <button class="header-burger-button">
+    <button class="header-burger-button" data-menu-open>
       <svg class="header-burger-icon" width="28" height="28">
         <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-header-mobile-button"></use>
       </svg>
     </button>
   </div>
-  <div class="mob-menu">
+  <div class="mob-menu is-hidden" data-menu>
     <div class="mob-menu-container">
-      <svg class="mob-menu-close-icon" width="28" height="28">
-        <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-close-btn"></use>
-      </svg>
+      <button type="button" class="mob-menu-close-btn" data-menu-close>
+        <svg class="mob-menu-close-icon" width="28" height="28">
+          <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-close-btn"></use>
+        </svg>
+      </button>
       <ul class="mob-menu-nav-list">
         <li class="mob-menu-nav-item">Home</li>
         <li class="mob-menu-nav-item">How it's made?</li>
@@ -43,18 +45,24 @@
         <li class="mob-menu-nav-item">Top sellers</li>
         <li class="mob-menu-nav-item">Chocolade is loved</li>
       </ul>
-      <ul class="mob-menu-soc-list">
-        <li class="mob-menu-soc-item">
-          <svg class="mob-menu-soc-icon" width="22" height="22">
-            <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-instagram"></use>
-          </svg>
-        </li>
-        <li class="mob-menu-soc-item">
-          <svg class="mob-menu-soc-icon" width="20" height="20">
-            <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-twitter"></use>
-          </svg>
-        </li>
-      </ul>
+      <div class="mob-menu-soc-div">
+        <ul class="mob-menu-soc-list">
+          <li class="mob-menu-soc-item">
+            <a href="">
+              <svg class="mob-menu-soc-icon" width="22" height="22">
+                <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-menu-soc-item">
+            <a href="">
+              <svg class="mob-menu-soc-icon" width="20" height="20">
+                <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </header>
@@ -398,5 +406,6 @@
 
     
     
+    <script src="./partials/scripts/mob-menu-js"></script>
   </body>
 </html>
