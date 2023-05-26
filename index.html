@@ -10,8 +10,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/Project-work-Team-2/assets/index-cac76ea1.js"></script>
-    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-a414ae96.css">
+    <script type="module" crossorigin src="/Project-work-Team-2/assets/index-e699cdea.js"></script>
+    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-9c62a97a.css">
   </head>
   <body>
     <!--! Loads the specified .html file !-->
@@ -21,13 +21,13 @@
       <a class="header-logo link" href="../index.html"
         ><span class="header-logo-span">Simply</span> Chocolate
         <svg class="header-logo-svg" width="21" height="21">
-          <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-header-logo"></use>
+          <use href="/Project-work-Team-2/assets/sprite-8d34deee.svg#icon-header-logo"></use>
         </svg>
       </a>
     </nav>
     <button class="header-burger-button" data-menu-open>
       <svg class="header-burger-icon" width="28" height="28">
-        <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-header-mobile-button"></use>
+        <use href="/Project-work-Team-2/assets/sprite-8d34deee.svg#icon-header-mobile-button"></use>
       </svg>
     </button>
   </div>
@@ -35,7 +35,7 @@
     <div class="mob-menu-container">
       <button type="button" class="mob-menu-close-btn" data-menu-close>
         <svg class="mob-menu-close-icon" width="28" height="28">
-          <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-close-btn"></use>
+          <use href="/Project-work-Team-2/assets/sprite-8d34deee.svg#icon-close-btn"></use>
         </svg>
       </button>
       <ul class="mob-menu-nav-list list">
@@ -50,14 +50,14 @@
           <li class="mob-menu-soc-item">
             <a href="">
               <svg class="mob-menu-soc-icon" width="22" height="22">
-                <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-instagram"></use>
+                <use href="/Project-work-Team-2/assets/sprite-8d34deee.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="mob-menu-soc-item">
             <a href="">
               <svg class="mob-menu-soc-icon" width="20" height="20">
-                <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-twitter"></use>
+                <use href="/Project-work-Team-2/assets/sprite-8d34deee.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -83,7 +83,7 @@
         >scroll down
         <div class="test-div">
           <svg class="hero-scroll-icon" width="16" height="16">
-            <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-hero-galochka"></use>
+            <use href="/Project-work-Team-2/assets/sprite-8d34deee.svg#icon-hero-galochka"></use>
           </svg>
         </div>
       </a>
@@ -220,7 +220,32 @@
   </ul>
 </section>
 
-    
+    <section class="sellers-section">
+  <div class="sellers-container">
+    <h2 class="sellers-title"><span>Top</span> Sellers</h2>
+    <ul class="sellers-list">
+      <li class="sellers-item">
+        <img src="../img/sellers/1x/1m.jpg" alt="soon will be picture" />
+        <p class="sellers-item-text">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+      </li>
+      <li class="sellers-item">
+        <img src="../img/sellers/1x/2m.jpg" alt="soon will be picture" />
+      </li>
+      <li class="sellers-item">
+        <img src="../img/sellers/1x/3d.jpg" alt="soon will be picture" />
+      </li>
+    </ul>
+
+    <button data-modal-open type="button" class="sellers-modal-but-now">
+      Buy now
+    </button>
+  </div>
+</section>
+
     <section class="reviews">
   <div class="reviews-container">
     <h2 class="review-title">
@@ -376,12 +401,125 @@
 </footer>
 
     <!-- ? MODAL WINDOWS -->
-    
+    <!-- Modal Window -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="buy-modal">
+    <button data-modal-close type="button" class="buy-modal-close-btn">
+      <svg class="cross-icon" width="12" height="12">
+        <use href="../../img/sprite.svg#cross-icon"></use>
+      </svg>
+    </button>
+    <p class="buy-modal-title-buy"><span>Buy</span> Now</p>
+
+    <div class="buy-modal-top">
+      <ul class="buy-modal-top-list">
+        <li class="buy-modal-top-item">
+          <img src="../../img/modal_buy_now/nuts.jpg" alt="1" />
+          <div class="buy-modal-position-weight">100 g</div>
+        </li>
+        <li class="buy-modal-top-item">
+          <img src="../../img/modal_buy_now/praline.jpg" alt="2" />
+          <div class="buy-modal-position-weight">200 g</div>
+        </li>
+        <li class="buy-modal-top-item">
+          <img src="../../img/modal_buy_now/chocolate.jpg" alt="3" />
+          <div class="buy-modal-position-weight">300 g</div>
+        </li>
+        <div></div>
+      </ul>
+    </div>
+
+    <form class="buy-modal-form">
+      <div class="buy-modal-section buy-modal-personal-info">
+        <label for="name" class="buy-modal-form-label"
+          >Presonal information</label
+        >
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="buy-modal-form-input"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="text"
+          name="surname"
+          id="surname"
+          class="buy-modal-form-input"
+          placeholder="Surname"
+          required
+        />
+      </div>
+
+      <div class="buy-modal-section">
+        <label for="email" class="buy-modal-form-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="buy-modal-form-input"
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div class="buy-modal-section">
+        <label for="tel" class="buy-modal-form-label">Phone number</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          class="buy-modal-form-input modal-tel-input"
+          placeholder="Phone number"
+          required
+        />
+        <div class="buy-modal-tel-box">
+          <svg class="buy-modal-tel-svg" width="20" height="25">
+            <use href="../../img/sprite.svg#icon-Mastercard"></use>
+          </svg>
+          <p>+380</p>
+        </div>
+      </div>
+
+      <div class="buy-modal-section">
+        <label for="card" class="buy-modal-form-label">Card number</label>
+        <input
+          type=""
+          name="card-number card-number-svg"
+          id="card"
+          class="buy-modal-form-input"
+          placeholder="Enter card"
+          required
+        />
+        <svg class="buy-modal-tel-svg" width="20" height="30">
+          <use href="../../img/sprite.svg#icon-UkrFlag"></use>
+        </svg>
+      </div>
+
+      <div class="buy-modal-section">
+        <label for="comment" class="buy-modal-form-label">Comment</label>
+        <textarea
+          rows="5"
+          name="comment"
+          id="comment"
+          class="buy-modal-form-input"
+          placeholder="Enter test"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="buy-modal-submit-btn">
+        <span>Submit</span>
+      </button>
+    </form>
+  </div>
+</div>
+<script src="../../js/modal.js"></script>
+
     <div class="backdrop is-hidden js-menu-container">
   <div class="review-modal">
     <button type="button" class="modal-close-btn js-close-menu">
       <svg class="modal-close-icon" width="24" height="24">
-        <use href="/Project-work-Team-2/assets/sprite-01cc75bd.svg#icon-close-btn"></use>
+        <use href="/Project-work-Team-2/assets/sprite-8d34deee.svg#icon-close-btn"></use>
       </svg>
     </button>
     <h2 class="review-modal-title">
