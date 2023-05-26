@@ -9,7 +9,7 @@
 }
 
 .header-section {
-    background-color: #FAFAFA;
+    background-color: var(--white-bg);
     width: 100%;
 
 }
@@ -19,8 +19,8 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+    /* padding-right: 20px;
+    padding-left: 20px; */
     padding-bottom: 14px;
 }
 
@@ -60,12 +60,12 @@
 
 .header-burger-icon {
     padding: 7px 3.5px;
-    stroke: #111111;
+    stroke: var(--primary-black);
 }
 
 .mob-menu {
     /* display: none; */
-    background: #1E1823;
+    background: var(--dark-violet);
     width: 58vw;
     height: 100vh;
     position: fixed;
@@ -95,7 +95,7 @@
 }
 
 .mob-menu-close-icon {
-    stroke: #FFFFFF;
+    stroke: var(--snow-white);
 }
 
 .mob-menu-nav-list {
@@ -112,7 +112,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--snow-white);
 }
 
 .mob-menu-soc-div {
@@ -134,6 +134,6 @@
 }
 
 .mob-menu-soc-icon {
-    stroke: #FFFFFF;
+    stroke: var(--snow-white);
     fill: transparent;
 }

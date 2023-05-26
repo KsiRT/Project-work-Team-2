@@ -37,6 +37,7 @@ body {
   background-color: grey;
   padding: 20px 20px;
 }
+
 .orng-btn {
   background-color: var(--brand-color);
   border: none;
@@ -54,6 +55,7 @@ body {
   background-color: var(--btn-hover);
   color: var(--brand-color);
 }
+
 @media screen and (min-width: 768px) {
   .orng-btn {
     padding: 14px 40px;
@@ -61,6 +63,7 @@ body {
     min-height: 45px;
   }
 }
+
 /* ========================================= */
 .transp-btn {
   background-color: transparent;
@@ -87,6 +90,7 @@ body {
     min-height: 45px;
   }
 }
+
 /* ========================================= */
 .tr-orng-btn {
   background-color: transparent;
@@ -99,6 +103,7 @@ body {
   min-width: 165px;
   min-height: 41px;
 }
+
 .tr-orng-btn:hover,
 .tr-orng-btn:focus {
   background-color: var(--brand-color);
