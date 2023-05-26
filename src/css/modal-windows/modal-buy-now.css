@@ -23,7 +23,7 @@
   max-height: 994px;
   transform: translate(-50%, -50%) scale(1);
   min-height: 576px;
-  padding: 72px 30px 30px 30px;
+  padding: 32px 24px;
   background-color: #fafafa;
   border-radius: 15px;
 }
@@ -58,6 +58,8 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111111;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .buy-modal-title-buy span {
