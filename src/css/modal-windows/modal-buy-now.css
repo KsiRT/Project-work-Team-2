@@ -1,0 +1,17 @@
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  min-height: 576px;
+  padding: 72px 30px 30px 30px;
+  background-color: white;
+  border-radius: 15px;
+  background: #fcfcfc;
+}
