@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+@import url('./slider-swiper/swiper-bundle.css');
 @import url('./reset.css');
 @import url('./vars.css');
 @import url('./common.css');
