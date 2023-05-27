@@ -22,7 +22,7 @@
   max-width: 311px;
   max-height: 100vh;
   transform: translate(-50%, -50%) scale(1);
-   padding: 32px 24px;
+  padding: 32px 24px;
   background-color: #fafafa;
   border-radius: 15px;
   overflow-y: scroll;
@@ -49,9 +49,9 @@
 }
 
 .buy-modal-title-buy {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
+  font-family: 'Montserrat-600', sans-serif;
+  /* font-style: normal; */
+  /* font-weight: 600; */
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
@@ -67,8 +67,9 @@
 }
 
 .buy-modal-top {
-  margin-bottom: 32px;
+  margin-bottom: 54px;
 }
+
 .buy-modal-top-list {
   display: flex;
   gap: 8px;
@@ -88,11 +89,14 @@
   margin-left: 16px;
   max-width: 84px;
   max-height: 69px;
+  width: 84px;
+  height: 69px;
+
 }
 
 .buy-modal-position-weight {
-  font-family: 'Montserrat-600', sants-serif;
-  font-style: normal;
+  font-family: 'Montserrat-600', sans-serif;
+  /* font-style: normal; */
   /* font-weight: 600; */
   font-size: 1.7;
 
@@ -114,7 +118,6 @@
 
 .buy-modal-section {
   position: relative;
-  /* TODO не могу померять это расстояние( */
   /* margin-bottom: 40px; */
 }
 
@@ -128,9 +131,9 @@
   top: -8px;
   left: 0;
   transform: translateY(-100%);
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'Montserrat-500', sans-serif;
+  /* font-style: normal; */
+  /* font-weight: 500; */
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
@@ -143,9 +146,9 @@
 }
 
 .buy-modal-form-input::placeholder {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Montserrat-400', sans-serif;
+  /* font-style: normal;
+  font-weight: 400; */
   font-size: 14px;
   line-height: 1.5;
   /* identical to box height */
@@ -186,16 +189,18 @@
 
 .buy-modal-card-svg {
   position: absolute;
-  right: 14px;
+  right: 16px;
   top: 50%;
   transform: translateY(-50%);
+  width: 21px;
+  height: 12px;
 }
 
 .buy-modal-submit-btn {
   display: block;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-600', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 14px;
   line-height: 1.2;
   color: white;
@@ -219,17 +224,28 @@
     /* max-width: 768px; */
     max-width: 609px;
     max-height: 100vh;
+    padding: 48px;
   }
+
+
+  .buy-modal-title-buy {
+    font-size: 24px;
+    line-height: 1.16;
+      }
+
 
   .buy-modal-top-item {
     max-width: 160px;
     max-height: 196px;
+    width: 160px;
+    height: 196px;
     padding: 24px 20px 18px 20px;
   }
 
   .buy-modal-top-list {
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
+    gap: 16px;
   }
 
   .buy-modal-top-item {
@@ -239,19 +255,95 @@
 
   .buy-modal-personal-info{
     flex-direction: row;
+    gap: 20px
   }
 
   .buy-modal-position-weight {
     margin-right: 0;
-  }
+    width: 96px;
+    height: 33px;
+    }
 
   .buy-modal-top-item img {
+    max-width: 107px;
+    max-height: 120px;
     width: 107px;
     height: 120px;
     margin: 0px 0px 14px 0px;
   }
+
+.buy-modal-card-svg {
+  width: 30px;
+  height: 18px;
+}
+
+.buy-modal-tel-svg {
+width: 32px;
+height: 23px;
+}
+
+#tel {
+  padding-left: 168px;
+}
+
+.buy-modal-form-label{
+  font-size: 14px;
+}
+
+.buy-modal-top {
+  margin-bottom: 66px;
+}
+
+.buy-modal-form-input {
+  height: 66px;
+  border-radius: 15px;
+}
+
+/* TODO Check not last child */
+.buy-modal-section:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.buy-modal-form-input::placeholder {
+  font-size: 18px;
+  line-height: 1.7;
+
+}
+
+.buy-modal-tel-box p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 32px;
+
+  font-family: 'Montserrat-500', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 
+.buy-modal-card-svg {
+  right: 25px;
+
+}
+
+
+#comment {
+  height: 137px;
+  padding-top: 16px;
+}
+
+
+.buy-modal-submit-btn {
+  margin-top: -30px;
+}
+
+
+}
+
 @media screen and (min-width: 1200px) {
+  .buy-modal {
+    overflow-y:unset;
+  }
+
+
 }
