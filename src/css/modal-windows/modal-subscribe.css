@@ -29,6 +29,9 @@
   margin-left: auto;
   padding: 0;
 }
+.subscribe-icon {
+
+}
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -90,44 +93,46 @@
 }
 /* ======================== Modal 768 =================== */
 
-.window-subscribe {
-  width: 538px;
-  min-height: 412px;
-  background-image: url(../../img/Subcribe-pic/Sub-Mod2.jpg);
-}
-.button-subscribe-close {
-  top: 31px;
-  right: 31px;
-}
-.menu-subscribe {
-  bottom: 40px;
-}
-.title-modal-menu {
-  margin-bottom: 28px;
-  width: 298px;
-  margin-left: 40px;
-}
-.subscribe-input {
-  border-radius: 100px;
-  min-width: 313px;
-  height: 52px;
-  padding-left: 18px;
-  left: 40px;
-}
-.subscribe-input::placeholder {
-  color: rgba(64, 64, 64, 0.3);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.22;
-}
-.button-subscribe-submit {
-  font-size: 14px;
-  line-height: 1.21;
-  border-radius: 100px;
-  padding: 17px 33px;
-  height: 51px;
-  min-width: 137px;
-  margin-left: 40px;
-  position: unset;
-  right: 40px;
+@media screen and (min-width: 768px) {
+  .window-subscribe {
+    width: 538px;
+    min-height: 412px;
+    background-image: url(../../img/Subcribe-pic/Sub-Mod2.jpg);
+  }
+  .button-subscribe-close {
+    top: 31px;
+    right: 31px;
+  }
+  .menu-subscribe {
+    bottom: 40px;
+  }
+  .title-modal-menu {
+    margin-bottom: 28px;
+    width: 298px;
+    margin-left: 40px;
+  }
+  .subscribe-input {
+    border-radius: 100px;
+    min-width: 313px;
+    height: 52px;
+    padding-left: 18px;
+    left: 40px;
+  }
+  .subscribe-input::placeholder {
+    color: rgba(64, 64, 64, 0.3);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .button-subscribe-submit {
+    font-size: 14px;
+    line-height: 1.21;
+    border-radius: 100px;
+    padding: 17px 33px;
+    height: 51px;
+    min-width: 137px;
+    margin-left: 40px;
+    position: unset;
+    right: 40px;
+  }
 }
