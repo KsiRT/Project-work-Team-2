@@ -1,11 +1,13 @@
-.hero-section {}
+.hero-section {
+    margin: 0 auto;
+}
 
 .hero-container {
     border-radius: 30px;
     max-width: 335px;
     min-height: 620px;
     max-height: 620px;
-    background-image: url(../img/hero/chocolate-hero1x.jpg), linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%);
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/chocolate-hero1x.jpg);
 }
 
 .hero-container-btns {
@@ -65,7 +67,7 @@
     color: var(--snow-white);
 }
 
-.test-div {
+.hero-scroll-div {
     display: flex;
     align-items: center;
     justify-content: center;
