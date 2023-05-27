@@ -1,9 +1,9 @@
-.container {
+/* .container {
   width: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-}
+} */
 .subscribe {
   padding-top: 62px;
   padding-bottom: 63px;
@@ -11,7 +11,7 @@
   text-align: center;
   max-width: 375px;
   margin: 0 auto;
-  background-image: url(../image/Subcribe.jpg);
+  background-image: url(../img/Subcribe-pic/Subcribe.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -54,9 +54,55 @@
   border: none;
   display: block;
 }
-
 .button-subscribe:hover,
 .button-subscribe:focus {
   color: #fd9222;
   background-color: #fcf1e0;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 373px;
+  }
+}
+/* ============================= 768 =================== */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .subscribe {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    max-width: 768px;
+    background-image: url(../img/Subcribe-pic/Subcribe2.jpg);
+  }
+  .title-subscribe {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+    max-width: 378px;
+    margin-bottom: 24px;
+  }
+  .text-subscribe {
+    max-width: 467px;
+  }
+  .button-subscribe {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 14px 40px;
+    height: 50px;
+    min-width: 172px;
+  }
+}
+/* ==========================  1200  ====================== */
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .subscribe {
+    max-width: 1200px;
+    background-image: url(../img/Subcribe-pic/Subcribe3.jpg);
+  }
 }
