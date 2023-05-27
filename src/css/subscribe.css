@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.subscribe {
+  padding-top: 62px;
+  padding-bottom: 63px;
+  background-color: #1e1823;
+  text-align: center;
+  max-width: 375px;
+  margin: 0 auto;
+  background-image: url(../image/Subcribe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.title-subscribe {
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 auto;
+  max-width: 291px;
+  margin-bottom: 24px;
+}
+.text-subscribe {
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  margin: 0 auto;
+  max-width: 326px;
+  margin-bottom: 24px;
+}
+.button-subscribe {
+  color: #ffffff;
+  background-color: #fd9222;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+  margin: 0 auto;
+  padding: 12px 28px;
+  height: 41px;
+  min-width: 128px;
+  border: none;
+  display: block;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
