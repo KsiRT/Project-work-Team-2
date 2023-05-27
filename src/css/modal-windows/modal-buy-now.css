@@ -91,9 +91,9 @@
 }
 
 .buy-modal-position-weight {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-600', sants-serif;
   font-style: normal;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 1.7;
 
   width: 73px;
