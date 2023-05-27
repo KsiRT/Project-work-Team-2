@@ -9,7 +9,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.backdrop .hidden {
+.hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -214,4 +214,28 @@
 #comment {
   height: 100px;
   resize: vertical;
+}
+
+@media screen and (min-width: 768px) {
+  .buy-modal {
+    /* max-width: 768px; */
+    max-width: 609px;
+  }
+
+  .buy-modal-top-item {
+    width: 160px;
+    height: 196px;
+  }
+
+  .buy-modal-top-list {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .buy-modal-top-item {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }
