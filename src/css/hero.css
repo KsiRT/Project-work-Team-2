@@ -20,9 +20,8 @@
 .hero-hidden-title {}
 
 .hero-paragraph {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-500';
     font-style: normal;
-    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.03em;
@@ -37,34 +36,46 @@
 }
 
 .buy-modal-btn {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-600', sans-serif;
     font-style: normal;
-    font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     color: var(--snow-white);
+    transition: color 100ms cubic-bezier(.11, .44, .82, .44);
+    transition: background-color 100ms cubic-bezier(.11, .44, .82, .44);
 }
 
 .hero-ahchor-button {
-    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat-600', sans-serif;
     font-style: normal;
-    font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     color: var(--snow-white);
+    transition: color 100ms cubic-bezier(.11, .44, .82, .44);
+    transition: background-color 100ms cubic-bezier(.11, .44, .82, .44);
 }
 
 .hero-scroll-button {
     display: flex;
     gap: 12px;
     align-items: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-500', sans-serif;
     font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: -0.03em;
     color: var(--snow-white);
+    padding: 5px 17px 10px 16px;
+    transition: color 100ms cubic-bezier(.11, .44, .82, .44);
+    transition: background-color 100ms cubic-bezier(.11, .44, .82, .44);
+}
+
+.hero-scroll-button:hover,
+.hero-scroll-button:focus {
+    background: #1E1823;
+    border-radius: 10px;
 }
 
 .hero-scroll-div {
