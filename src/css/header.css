@@ -115,6 +115,11 @@
     color: var(--snow-white);
 }
 
+.mob-menu-nav-link:hover,
+.mob-menu-nav-link:focus {
+    color: var(--brand-color);
+}
+
 .mob-menu-soc-div {
     display: flex;
     margin-left: 0;
