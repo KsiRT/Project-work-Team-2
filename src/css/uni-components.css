@@ -1,4 +1,4 @@
-.comtainer {
+.container {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -10,47 +10,38 @@
   width: 335px;
   background: #fd9222;
   border-radius: 15px;
-  background-image: url(../img/uni-components/chocolate-mobile-tablet1x.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 28px 55px 71px;
 }
 .img-components-milk {
   height: 270px;
   width: 335px;
   background: #ffffff;
   border-radius: 15px;
-  background-image: url(../img/uni-components/milk-mobile-tablet1x.png);
-  background-repeat: no-repeat;
-  background-position: center;
   border: 1px solid #fd9222;
+  padding: 28px 55px 71px;
 }
 .img-components-nuts {
   height: 270px;
   width: 335px;
   background: #1e1823;
   border-radius: 15px;
-  background-image: url(../img/uni-components/nuts-mobile-tablet1x.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 28px 55px 71px;
 }
 .img-components-cofe {
   height: 270px;
   width: 335px;
   background: #ffffff;
   border-radius: 15px;
-  background-image: url(../img/uni-components/cofe-mobile-tablet1x.png);
-  background-repeat: no-repeat;
-  background-position: center;
   border: 1px solid #fd9222;
+  padding: 28px 55px 71px;
 }
 .name-components-white {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
   color: #ffffff;
-  vertical-align: bottom;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 .name-components-black {
   font-weight: 600;
@@ -58,7 +49,7 @@
   line-height: 1.29;
   color: #111111;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .curtains-wrap {
@@ -74,6 +65,7 @@
   width: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 25px;
 }
 .element-components {
   display: block;
@@ -93,7 +85,7 @@
   line-height: 1.28;
   letter-spacing: 0.02em;
   color: #111111;
-  padding: 24px;
+  margin-top: 14px;
 }
 .titel-curts {
   font-weight: 600;
@@ -102,6 +94,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111111;
+  margin-bottom: 8px;
 }
 .titel-components {
   font-weight: 600;
@@ -113,7 +106,8 @@
   color: #111111;
   width: 283px;
   margin-bottom: 24px;
-  display: inline-block;
+  margin-top: 72px;
+  display: inline-block;  
 }
 .colortext {
   color: #fd9222;
@@ -125,7 +119,6 @@
   text-align: center;
   letter-spacing: -0.02em;
   padding: 0 28px 0 28px;
-  display: inline-block;
   margin-bottom: 32px;
 }
 .list-components {
@@ -136,8 +129,11 @@
 .pseudo-button {
   display: flex;
   gap: 6px;
+ 
 }
-.text-benefits {
+.text-button-decoration {
+  display: flex;
+  gap: 6px;
   background: #fafafa;
   border: 1px solid #fd9222;
   border-radius: 35px;
@@ -145,15 +141,10 @@
   justify-content: center;
   align-items: center;
   padding: 6px 16px;
-  width: 93px;
   height: 24px;
 }
-.text-components {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 16px;
-  gap: 4px;
-  background: #fd9222;
-  border-radius: 35px;
+.text-button-decoration:hover,
+.text-button-decoration:hover {
+  background-color: #fd9222;
 }
+

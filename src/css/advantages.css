@@ -1,0 +1,28 @@
+.title-advantages-none {
+  display: none;
+}
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-advantages {
+  background-color: #1e1823;
+}
+.titel-advantages {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-top: 18px;
+}
+.text-advantages {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
