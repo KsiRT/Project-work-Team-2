@@ -20,14 +20,12 @@
   top: 50%;
   left: 50%;
   max-width: 311px;
-  /* TODO  делаю пока шире */
-  width: 500px;
-  max-height: 994px;
+  max-height: 100vh;
   transform: translate(-50%, -50%) scale(1);
-  /* min-height: 576px; */
-  padding: 32px 24px;
+   padding: 32px 24px;
   background-color: #fafafa;
   border-radius: 15px;
+  overflow-y: scroll;
 }
 
 .buy-modal-close-btn {
@@ -127,7 +125,6 @@
 .buy-modal-form-label {
   /* display: block; */
   position: absolute;
-  /* TODO на макере топ 8, но это очень много выходит */
   top: -8px;
   left: 0;
   transform: translateY(-100%);
@@ -214,17 +211,20 @@
 #comment {
   height: 100px;
   resize: vertical;
+  padding-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .buy-modal {
     /* max-width: 768px; */
     max-width: 609px;
+    max-height: 100vh;
   }
 
   .buy-modal-top-item {
-    width: 160px;
-    height: 196px;
+    max-width: 160px;
+    max-height: 196px;
+    padding: 24px 20px 18px 20px;
   }
 
   .buy-modal-top-list {
@@ -234,8 +234,24 @@
 
   .buy-modal-top-item {
     flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .buy-modal-personal-info{
+    flex-direction: row;
+  }
+
+  .buy-modal-position-weight {
+    margin-right: 0;
+  }
+
+  .buy-modal-top-item img {
+    width: 107px;
+    height: 120px;
+    margin: 0px 0px 14px 0px;
   }
 }
+
 
 @media screen and (min-width: 1200px) {
 }
