@@ -1,20 +1,22 @@
+.prod-container {
+  padding-bottom: 72px;
+}
 .prod-title {
+  font-family: 'Montserrat-600', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 32px;
 }
-.prod-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.prod-list-container {
+  max-width: 335px;
 }
 
 .prod-item {
   display: flex;
-  display: none;
-
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -23,23 +25,19 @@
   border-radius: 15px;
   background-color: #ffffff;
   max-width: 335px;
-  width: calc(100% - 20px);
-  margin-bottom: 20px;
 }
 
 .chok-name {
-  font-weight: 600;
+  font-family: 'Montserrat-600', sans-serif;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-
   color: #111111;
   margin-top: 8px;
   margin-bottom: 2px;
 }
 .chok-type {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
@@ -49,17 +47,40 @@
 }
 
 .chok-price {
+  font-family: 'Montserrat-600', sans-serif;
   display: block;
   background: #fafafa;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   min-width: 94px;
   font-size: 14px;
-  font-weight: 600;
   padding: 8px 20px;
   min-height: 33px;
 }
-
-.displayed {
-  display: flex;
+.prod-list-container .swiper-pagination {
+  margin-bottom: 0;
+}
+/* ===========test-btn================= */
+.test {
+  display: none;
+}
+/* ============================== */
+@media screen and (min-width: 768px) {
+  .prod-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .prod-list-container {
+    max-width: 728px;
+  }
+  .prod-item {
+    padding: 32px 20px;
+    max-width: 270px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prod-list-container {
+    max-width: 1136px;
+  }
 }

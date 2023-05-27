@@ -65,7 +65,8 @@
   margin-bottom: 32px;
   bottom: 0 !important;
 }
-.reviews-cards-container .swiper-pagination-bullet {
+.reviews-cards-container .swiper-pagination-bullet,
+.prod-list-container .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   background-color: rgb(17, 17, 17);
@@ -73,7 +74,8 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 7px;
 }
-.reviews-cards-container .swiper-pagination-bullet-active {
+.reviews-cards-container .swiper-pagination-bullet-active,
+.prod-list-container .swiper-pagination-bullet-active {
   background-color: var(--brand-color);
   width: 28px;
   border-radius: 100px;
