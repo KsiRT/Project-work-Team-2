@@ -10,8 +10,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/Project-work-Team-2/assets/index-4df66627.js"></script>
-    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-9bdb81ce.css">
+    <script type="module" crossorigin src="/Project-work-Team-2/assets/index-29e4f1a6.js"></script>
+    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-12b91346.css">
   </head>
   <body>
     <!--! Loads the specified .html file !-->
@@ -247,7 +247,7 @@
 </section>
 
     <section class="reviews">
-  <div class="reviews-container">
+  <div class="reviews-container container">
     <h2 class="review-title">
       <span class="orang-text">Chocolate</span> is loved
     </h2>
@@ -350,7 +350,7 @@
     </div>
     <button
       type="button"
-      class="review-btn js-open-menu"
+      class="review-btn reviews-modal-open"
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
@@ -519,9 +519,9 @@
 </div>
 <script src="../../js/modal.js"></script>
 
-    <div class="backdrop is-hidden js-menu-container">
+    <div class="backdrop is-hidden reviews-modal-container">
   <div class="review-modal">
-    <button type="button" class="modal-close-btn js-close-menu">
+    <button type="button" class="modal-close-btn reviews-modal-close">
       <svg class="modal-close-icon" width="24" height="24">
         <use href="/Project-work-Team-2/assets/sprite-8d34deee.svg#icon-close-btn"></use>
       </svg>
@@ -545,6 +545,7 @@
         id="review-form-email"
         type="email"
         placeholder="Enter your email"
+        required
       />
       <span class="user-phone-container"
         ><span class="flag-prenumber-container"
