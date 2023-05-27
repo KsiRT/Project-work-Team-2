@@ -9,7 +9,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden {
+.backdrop .hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -98,13 +98,15 @@
   font-weight: 600;
   font-size: 1.7;
 
-  width: 70px;
+  width: 73px;
   height: 29px;
   background: #fafafa;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   margin-right: 16px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* !========== !*/
@@ -115,8 +117,13 @@
 .buy-modal-section {
   position: relative;
   /* TODO не могу померять это расстояние( */
+  /* margin-bottom: 40px; */
+}
+
+.buy-modal-section:not(:last-child) {
   margin-bottom: 40px;
 }
+
 .buy-modal-form-label {
   /* display: block; */
   position: absolute;
@@ -160,12 +167,17 @@
   padding-left: 18px;
 }
 
+#tel {
+  padding-left: 100px;
+}
+
 .buy-modal-tel-box {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
+  align-items: center;
   gap: 8px;
   margin-left: 18px;
 }
@@ -184,4 +196,22 @@
 
 .buy-modal-submit-btn {
   display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: white;
+
+  background-color: #fd9222;
+  border: none;
+  border-radius: 100px;
+  min-width: 109px;
+  min-height: 41px;
+  margin-top: -18px;
+}
+
+#comment {
+  height: 100px;
+  resize: vertical;
 }
