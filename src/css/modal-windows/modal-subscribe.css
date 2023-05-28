@@ -7,8 +7,8 @@
 }
 .window-subscribe {
   position: absolute;
-  max-width: 311px;
-  max-height: 350px;
+  width: 311px;
+  min-height: 350px;
   background-color: var(--white-bg);
   border-radius: 15px;
   background-image: url(../../img/Subcribe-pic/Sub-Mod1.jpg);
@@ -28,12 +28,11 @@
   align-items: center;
   margin-left: auto;
   padding: 0;
+  border: none;
+  background-color: transparent;
 }
 .subscribe-icon {
   stroke: var(--snow-white);
-  border: none;
-  background-color: transparent;
-  fill: var(--snow-white);
 }
 .is-hidden {
   opacity: 0;

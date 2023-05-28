@@ -56,7 +56,7 @@
 
 .footer-social-icon {
   fill: var(--snow-white);
-  background-color: var(--dark-violet);
+  background-color: transparent;
 }
 .footer-link-anchor {
   color: var(--snow-white);
