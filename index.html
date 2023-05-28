@@ -9,9 +9,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     
-    <script type="module" crossorigin src="/Project-work-Team-2/assets/index-5c149ac3.js"></script>
-    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-c77d1301.css">
+    <script type="module" crossorigin src="/Project-work-Team-2/assets/index-c4eaf239.js"></script>
+    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-b70075cc.css">
   </head>
   <body>
     <!--! Loads the specified .html file !-->
@@ -174,95 +178,100 @@
   </ul>
 </section>
 
-    <section class="prod-section container">
-  <h2 class="prod-title">Our <span class="accent">products</span></h2>
-  <ul class="prod-list list">
-    <li class="prod-item displayed">
-      <img
-        srcset="../img/chokolate-bars/orange@2x.jpg 2x"
-        src="../img/chokolate-bars/orange.jpg"
-        alt="- chocolate bar"
-      />
-      <h3 class="chok-name">Orange</h3>
-      <p class="chok-type">Dark chocolate</p>
-      <span class="chok-price">45 UAH</span>
-    </li>
-    <li class="prod-item">
-      <img
-        srcset="../img/chokolate-bars/apple@2x.jpg 2x"
-        src="../img/chokolate-bars/apple.jpg"
-        alt="- chocolate bar"
-      />
-      <h3 class="chok-name">Apple&Cranberry</h3>
-      <p class="chok-type">Milk chocolate</p>
-      <span class="chok-price">50 UAH</span>
-    </li>
-    <li class="prod-item">
-      <img
-        srcset="../img/chokolate-bars/lime@2x.jpg 2x"
-        src="../img/chokolate-bars/lime.jpg"
-        alt="- chocolate bar"
-      />
-      <h3 class="chok-name">Lime&Sea salt</h3>
-      <p class="chok-type">Dark chocolate</p>
-      <span class="chok-price">66 UAH</span>
-    </li>
-    <li class="prod-item">
-      <img
-        srcset="../img/chokolate-bars/pinaple@2x.jpg 2x"
-        src="../img/chokolate-bars/pinaple.jpg"
-        alt="- chocolate bar"
-      />
-      <h3 class="chok-name">Pineapple</h3>
-      <p class="chok-type">Dark chocolate</p>
-      <span class="chok-price">54 UAH</span>
-    </li>
-    <li class="prod-item">
-      <img
-        srcset="../img/chokolate-bars/milkchok@2x.jpg 2x"
-        src="../img/chokolate-bars/milkchok.jpg"
-        alt="- chocolate bar"
-      />
-      <h3 class="chok-name">Classic</h3>
-      <p class="chok-type">Milk chocolate</p>
-      <span class="chok-price">45 UAH</span>
-    </li>
-    <li class="prod-item">
-      <img
-        srcset="../img/chokolate-bars/honey@2x.jpg 2x"
-        src="../img/chokolate-bars/honey.jpg"
-        alt="- chocolate bar"
-      />
-      <h3 class="chok-name">Honey</h3>
-      <p class="chok-type">Milk chocolate</p>
-      <span class="chok-price">50 UAH</span>
-    </li>
-    <li class="prod-item">
-      <img
-        srcset="../img/chokolate-bars/roasted@2x.jpg 2x"
-        src="../img/chokolate-bars/roasted.jpg"
-        alt="- chocolate bar"
-      />
-      <h3 class="chok-name">Roasted fruits</h3>
-      <p class="chok-type">Dark chocolate</p>
-      <span class="chok-price">66 UAH</span>
-    </li>
-    <li class="prod-item">
-      <img
-        srcset="../img/chokolate-bars/white@2x.jpg 2x"
-        src="../img/chokolate-bars/white .jpg"
-        alt="- chocolate bar"
-      />
-      <h3 class="chok-name">Classic</h3>
-      <p class="chok-type">White chocolate</p>
-      <span class="chok-price">54 UAH</span>
-    </li>
+    <section class="prod-section">
+  <div class="prod-container">
+    <h2 class="prod-title">Our <span class="accent">products</span></h2>
+    <div class="prod-list-container swiper">
+      <ul class="prod-list list swiper-wrapper">
+        <li class="prod-item swiper-slide">
+          <img
+            srcset="../img/chokolate-bars/orange@2x.jpg 2x"
+            src="../img/chokolate-bars/orange.jpg"
+            alt="- chocolate bar"
+          />
+          <h3 class="chok-name">Orange</h3>
+          <p class="chok-type">Dark chocolate</p>
+          <button type="button" class="chok-price">45 UAH</button>
+        </li>
+        <li class="prod-item swiper-slide">
+          <img
+            srcset="../img/chokolate-bars/apple@2x.jpg 2x"
+            src="../img/chokolate-bars/apple.jpg"
+            alt="- chocolate bar"
+          />
+          <h3 class="chok-name">Apple&Cranberry</h3>
+          <p class="chok-type">Milk chocolate</p>
+          <button type="button" class="chok-price">50 UAH</button>
+        </li>
+        <li class="prod-item swiper-slide">
+          <img
+            srcset="../img/chokolate-bars/lime@2x.jpg 2x"
+            src="../img/chokolate-bars/lime.jpg"
+            alt="- chocolate bar"
+          />
+          <h3 class="chok-name">Lime&Sea salt</h3>
+          <p class="chok-type">Dark chocolate</p>
+          <button type="button" class="chok-price">66 UAH</button>
+        </li>
+        <li class="prod-item swiper-slide">
+          <img
+            srcset="../img/chokolate-bars/pinaple@2x.jpg 2x"
+            src="../img/chokolate-bars/pinaple.jpg"
+            alt="- chocolate bar"
+          />
+          <h3 class="chok-name">Pineapple</h3>
+          <p class="chok-type">Dark chocolate</p>
+          <button type="button" class="chok-price">54 UAH</button>
+        </li>
+        <li class="prod-item swiper-slide">
+          <img
+            srcset="../img/chokolate-bars/milkchok@2x.jpg 2x"
+            src="../img/chokolate-bars/milkchok.jpg"
+            alt="- chocolate bar"
+          />
+          <h3 class="chok-name">Classic</h3>
+          <p class="chok-type">Milk chocolate</p>
+          <button type="button" class="chok-price">45 UAH</button>
+        </li>
+        <li class="prod-item swiper-slide">
+          <img
+            srcset="../img/chokolate-bars/honey@2x.jpg 2x"
+            src="../img/chokolate-bars/honey.jpg"
+            alt="- chocolate bar"
+          />
+          <h3 class="chok-name">Honey</h3>
+          <p class="chok-type">Milk chocolate</p>
+          <button type="button" class="chok-price">50 UAH</button>
+        </li>
+        <li class="prod-item swiper-slide">
+          <img
+            srcset="../img/chokolate-bars/roasted@2x.jpg 2x"
+            src="../img/chokolate-bars/roasted.jpg"
+            alt="- chocolate bar"
+          />
+          <h3 class="chok-name">Roasted fruits</h3>
+          <p class="chok-type">Dark chocolate</p>
+          <button type="button" class="chok-price">66 UAH</button>
+        </li>
+        <li class="prod-item swiper-slide">
+          <img
+            srcset="../img/chokolate-bars/white@2x.jpg 2x"
+            src="../img/chokolate-bars/white .jpg"
+            alt="- chocolate bar"
+          />
+          <h3 class="chok-name">Classic</h3>
+          <p class="chok-type">White chocolate</p>
+          <button type="button" class="chok-price">54 UAH</button>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
     <div class="test">
       <button class="orng-btn">Buy</button>
       <button class="transp-btn">How it`s made</button>
       <button class="tr-orng-btn">Leave a review</button>
     </div>
-  </ul>
+  </div>
 </section>
 
     <section class="sellers-section container">
@@ -333,7 +342,7 @@
           <img
             class="reviews-card-img"
             srcset="/Project-work-Team-2/assets/Olena_Kampusch@2x-min-dc44d51d.jpg 2x, /Project-work-Team-2/assets/Olena_Kampusch@3x-min-b5a048d6.jpg 3x"
-            src="../img/reviews/Olena_Kampusch-min.jpg"
+            src="data:image/jpeg;base64,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"
             alt="Olena Kampusch photo"
             width="80"
             height="80"
@@ -348,7 +357,7 @@
           <img
             class="reviews-card-img"
             srcset="/Project-work-Team-2/assets/Natalia_Sus@2x-min-af40b80f.jpg 2x, /Project-work-Team-2/assets/Natalia_Sus@3x-min-53977193.jpg 3x"
-            src="../img/reviews/Natalia_Sus-min.jpg"
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIAFAAUAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAHCAAFBgQJAgP/2gAIAQEAAAAAf6ANZJr9OWzNIkKuMDpfuuADftSDfNBh9YOiJzL6Vn0QcashWCkrgzGE1wEU7WN76C/EAc2jFKr+LR3VRS5AH61gcIFjyQ81hcfj9M3O58+Dl3XGKW6y2foSXlbE9aEh7161vHJkGyzKbTGZ0DvP/8QAGQEBAQADAQAAAAAAAAAAAAAABAUBAgYD/9oACAECEAAAANZBE1ByvZAXzWby7nMOsHr8zfyj/8QAGgEAAQUBAAAAAAAAAAAAAAAABQABAgMEBv/aAAgBAxAAAACZ7bjBlS6x1yIxpQ/oWCIL0wR8H//EACUQAAEFAAEDBAMBAAAAAAAAAAMBAgQFBgcACBIQERMVFCEiI//aAAgBAQABCAD05D7icpjFkVdFb80cq62dF8KKJZG8i2jFkQ/Z0Ws5J21I9qjyHO2VurANDeevcHztMkyJOHxVDBNZmcgqLPDhRmq9sdjE9mEH/KdHGjWqqbcyEswC64J5WO+uhZ7U9dwHIqYjJfV15VNJkKUuDphxa4RlspVWETlsPtMiWSrK2j+zUL2zrq2FDH8IdS6Sa2Y8+EqZtpLNDiYC0FJpwUzu4HRv0fIN2/qtgR5MdhFowNHEAFuhz0Cei/mOzT6xJUaHTqaLXkY6xHey5JjIhjmnN+erOZtoFkbjcU2quKyfOuLL7KZNnPzs1iTYcZalFaNvU0TjDVEjwxgc55WiaRpAdW9WeGeUo7D+Z3kyGpBSBTBYmvuJrokyLa1pqqZNrj0hWssI7uqUjSxhqjupIkejmvM6PEcqtJKI2vJ853/LJe7qkO4sUrVx13OkBiwT890581yReBWtVqzgKPOWb4wgoRslCMRW21KOzchDTc5KCpPx7iwdU0qwzCaBYw2rRQjRRlmF4cqs7YW1eEXcRxyTY5cd5WUcfymt9quGxIzREAaRXk9muua1zF8tJfwIcV0jqfOkW0wkk8dDsGrFhvWVXBGzhHHkzWUFYz+uS+F2Vs+VqcoL9BREPJ8XOR2+tVKRkEbP0jF6ioxxneTHf4javA/C5zuBs9d667imivXlm1ux4u3lKpHh2dJdVVk59vX11pYuGOuyHb5ynpDhIvHfb3lse4Fpd+n/xAA3EAACAQMCAwcABgsBAAAAAAABAgMABBEhQQUSMRATMlFhcYEUICIjQmIGFSUzQ1JygqKy0dL/2gAIAQEACT8A7FXjnGY9HEL4ton8nkAOSPJa4y/DrOePnNtw0dwEGqnL+Or2e6kBwXmlaQn1yxNXEsDDXMTshHrpXF3vIl/hXv34P9x+2Pg1+xuLSaRCd82058kk2f0b6l60NrG5j4hfwvh5yOsURHSOoC3MqroN96TLka5oCtR2acmSTV88qZSG0uJSWkQNosbndOycrxfi4eGMp1jgGkj1zF5DUYDMM5qeQRjTkVyv+tXEtpPnSSGQnX1wTVylyg8MoADexxVtJczn8EdWTW/MAApcMSPip+55QrO/MFAWuKJe3fD4UjeTJLGPopJPiI6E05Ntw6Y8NgGwFto4+XyaB79HfKH4IrZAKj9UbdT55pkmFyVUuUzIqrrhajYMEA19BV44j58uF6rrqcEa07sve8qd54sZonnZwmPMsARV/BaxzhrZ7U6ySF9ANOmGwaPP9KuJZWLdS0jF80CwLHJbb0o7Vgn1objTQZNNGrhRlAwYjPnTaBzkjcGh4XLU2PC2h8hoRVu0hEiSmVzyqCpzkk1Gc2k8sb+6uVxQ6San4o50HZrzbVCqXDxle/C5f0BNSc/MCCx866F2wfnFEkxRMy/FXUrIxS2jiXcs3TT1aoALTiDfrOD8/wBJ1c/DhhRIDvj5G9eBgBmtc9DU9wrAEfdyMgx7A1eXHcgdC/8A6zU5e4Z25CfX/lZBAIydyTWBF4dd+barGS6ubYLePPL4IioByB/XUPPxbgnPMEHimtT+9j9x4hSkkM2BQ15a+8g3XcVMqtuG0NTqgA+W9hvTYycIn8o8qUPCMa9CCemKkxyO+n5jURj4lxNEkZT4ooOqIfJtcnstCbaeRpryzjXJhY6tJGB+A7jaiMijTaE5f2FdehrZTil0wQffGas3gs0cTWNjMuGnI1EsqnonkN/qOOG35PMxjXMMhO7JsT5iuBTcQhGcS2GZ/wDBft1YT2zOFYLKjLgEZHWuF3N22ywQvKT8KDX6OPwu1PWfiubUL7oQZKkHGuKphkMqYtYW/JHuR5t2/wD/xAAkEQACAQMEAgIDAAAAAAAAAAABAgMABBESITFBE1EFIjJSgf/aAAgBAgEBPwBnC81cXkmoxoN/Q6pfIMs+cmra5lEoQsSuDsaguI7gPoO6NpYdg1POFLSH2VFKWca88nJpkYsnhdip5BqCJlJcuhIHA5FW7y29+jpECku0zs+Ao62qZAYpP7Vuw0ivMy/iAcdVbMWdiR1V+kecywvLoIwiHBJ6q5URCU9EE0JCrnB2zUbvhRGwJPA05pYDDGMt9ydTVDHLLdK231bLZGdhVxAlxGY329EdVN8bcRPjQWX9l3qzREtYhHggjOR7qWFpGXGwHdRxLECF75Nf/8QAKBEAAgEDBAECBwEAAAAAAAAAAQIDAAQREiExQTITYQUUI1FScYGh/9oACAEDAQE/AEjaQ4HA5NW1hCqCR/8AeTTaOFAx9qurSB4mcIFcEbjap4JIGAcbEZU9EVaWpdUjBAJAc++aICvox4jC0GbQ3qoobrFXMilRH6bgFhueDV8iSW+8mCngoXcmraRhLF1nApvMmiiyZznPsKvAqwoOy1LrMR9NlGRklt8VYyGYw77qQD/KkQPuOajneINqGF7JOKe7+ZmdtH0wMLV48UVroBO4GnB5Jq2uZLWUSJ/QeCKt/iVvMPMI34ttV3K0l3Kzk9AfqormOFG1bk9CppnmbU3XA6Ff/9k="
             alt="Natalia Sus photo"
             width="80"
             height="80"
@@ -613,6 +622,7 @@
 </div>
 
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
     </body>
 </html>
