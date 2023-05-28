@@ -1,12 +1,12 @@
 .footer {
   padding: 32px 0;
-  background-color: #1e1823;
+  background-color: var(--dark-violet);
   margin: 0 auto;
   max-width: 100%;
 }
 
 .footer-tagline {
-  color: #ffffff;
+  color: var(--snow-white);
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -16,7 +16,7 @@
   margin-bottom: 32px;
 }
 .footer-tagline-color {
-  color: #fd9222;
+  color: var(--brand-color);
 }
 /* ------------------Address------------- */
 .footer-address,
@@ -30,7 +30,7 @@
 }
 
 .footer-address-title {
-  color: #ffffff;
+  color: var(--snow-white);
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -41,7 +41,7 @@
 .footer-address-list {
 }
 .footer-address-link {
-  color: #ffffff;
+  color: var(--snow-white);
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -55,10 +55,11 @@
 }
 
 .footer-social-icon {
-  fill: #ffffff;
+  fill: var(--snow-white);
+  background-color: var(--dark-violet);
 }
 .footer-link-anchor {
-  color: #ffffff;
+  color: var(--snow-white);
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -91,7 +92,7 @@
 }
 /* ====================== 768 ==================== */
 @media screen and (min-width: 768px) {
-  .container {
+  .footer > .container {
     max-width: 738px;
   }
   .footer {
@@ -99,12 +100,13 @@
   }
 
   .footer-tagline {
-    color: #ffffff;
+    color: var(--snow-white);
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 28px;
     line-height: 1.21;
     display: block;
+    margin-bottom: 54px;
   }
   .footer-social {
     gap: 21px;
@@ -131,9 +133,6 @@
 }
 /* ============================= 1200 ==================== */
 @media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
   .footer-address-social {
     gap: 65px;
   }
