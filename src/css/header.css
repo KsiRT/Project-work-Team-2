@@ -28,8 +28,8 @@
 
 .header-logo {
     display: flex;
-    font-family: 'Montserrat';
-    font-weight: 700;
+    gap: 4px;
+    font-family: 'Montserrat-700', sans-serif;
     font-size: 14px;
     line-height: 1.29;
     text-transform: uppercase;
@@ -38,11 +38,7 @@
 }
 
 .header-logo-span {
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.29;
+    font-family: 'Montserrat-italic-700';
     /* identical to box height, or 129% */
 
     letter-spacing: -0.03em;
@@ -106,13 +102,22 @@
 }
 
 .mob-menu-nav-item {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-500', sans-serif;
     font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: var(--snow-white);
+}
+
+.mob-menu-nav-link {
+    transition: color 100ms cubic-bezier(.11, .44, .82, .44);
+
+}
+
+.mob-menu-nav-link:hover,
+.mob-menu-nav-link:focus {
+    color: var(--brand-color);
 }
 
 .mob-menu-soc-div {
@@ -136,4 +141,18 @@
 .mob-menu-soc-icon {
     stroke: var(--snow-white);
     fill: transparent;
+    transition: stroke 100ms cubic-bezier(.11, .44, .82, .44);
+}
+
+.mob-menu-soc-icon:hover,
+.mob-menu-soc-icon:focus {
+    stroke: var(--brand-color);
+}
+
+.header-destp-container {
+    display: none;
+}
+
+.header-destp-soc-list {
+    display: none;
 }
