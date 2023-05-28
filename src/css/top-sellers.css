@@ -1,16 +1,6 @@
-/* body {
-  float: inline-end;
-}
-
-body:nth-last-child(1) {
-} */
-
 .sellers-section {
   margin: 0 auto;
   padding: 72px 20px;
-  border: 1px solid;
-}
-.sellers-container {
 }
 
 .sellers-title {
@@ -89,6 +79,7 @@ body:nth-last-child(1) {
   }
 
   .sellers-list  img {
+    min-width: 342px;
     max-width: 344px;
     height: 464px;
   }
@@ -147,8 +138,9 @@ body:nth-last-child(1) {
   }
 
   .sellers-list  img {
-    width: 368px;
-    height: 464px;
+   min-width: 365px;
+   max-width: 368px;
+   height: 464px;
   }
 
   .sellers-item-text {
