@@ -1,0 +1,140 @@
+.footer {
+  padding: 32px 0;
+  background-color: #1e1823;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.footer-tagline {
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  max-width: 300px;
+  margin-bottom: 32px;
+}
+.footer-tagline-color {
+  color: #fd9222;
+}
+/* ------------------Address------------- */
+.footer-address,
+.footer-social,
+.footer-site-nav {
+  padding: 0;
+}
+.footer-address {
+  display: block;
+  margin: 0;
+}
+
+.footer-address-title {
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 14px;
+}
+.footer-address-list {
+}
+.footer-address-link {
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+}
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+}
+
+.footer-social-icon {
+  fill: #ffffff;
+}
+.footer-link-anchor {
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.footer-nav-link:not(:last-child) {
+  margin-bottom: 18px;
+}
+.footer-nav::before {
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.footer-site-nav {
+  margin: 0;
+}
+.footer-address-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+/* ====================== 768 ==================== */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer-tagline {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    display: block;
+  }
+  .footer-social {
+    gap: 21px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .footer-address-social {
+    gap: 52px;
+  }
+  .footer-nav::before {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .footer-site-nav {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-nav-link {
+    margin-bottom: 0;
+  }
+}
+/* ============================= 1200 ==================== */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .footer-address-social {
+    gap: 65px;
+  }
+}

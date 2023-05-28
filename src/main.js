@@ -3,3 +3,4 @@ import './js/modal-reviews';
 import './js/slider-settings';
 import './js/modal-buy';
 import './js/mob-menu';
+import './js/subscribe';
