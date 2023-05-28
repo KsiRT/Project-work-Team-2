@@ -66,9 +66,6 @@ body:nth-last-child(1) {
 }
 
 @media screen and (min-width: 768px) {
-  .sellers-container {
-  }
-
   .sellers-section {
     max-width: 768px;
     padding: 72px 32px;
@@ -103,15 +100,29 @@ body:nth-last-child(1) {
   .sellers-item,
   .sellers-item img {
     margin: 0 auto;
-    /* margin-bottom: 32px; */
+    }
+
+
+  .sellers-title {
+    font-size: 24px;
+    }
+
+  .sellers-item-text{
+    font-size: 14px;
+    line-height: 18px;
   }
 
-  .sellers-modal-buy-now {
-    /* position: absolute; */
-    /* margin-right: 0; */
-    /* margin-top: -50px; */
+  .sellers-modal-buy-now{
+    font-size: 18px;
+    line-height: 22px;
+    min-width: 162px;
+    min-height: 50px;
+   }
+
+
   }
-}
+
+
 
 @media screen and (min-width: 1200px) {
 }
