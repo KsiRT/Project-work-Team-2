@@ -12,7 +12,7 @@
 }
 .title-subscribe {
   color: var(--snow-white);
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -20,10 +20,11 @@
   margin: 0 auto;
   max-width: 291px;
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 .text-subscribe {
   color: var(--snow-white);
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -35,7 +36,7 @@
 .button-subscribe {
   color: var(--snow-white);
   background-color: var(--brand-color);
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -54,16 +55,16 @@
   background-color: var(--btn-hover);
 }
 
-@media screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) {
   .container {
     max-width: 373px;
   }
-}
+} */
 /* ============================= 768 =================== */
 @media screen and (min-width: 768px) {
-  .container {
+  /* .container {
     max-width: 768px;
-  }
+  } */
   .subscribe {
     padding-top: 72px;
     padding-bottom: 72px;
