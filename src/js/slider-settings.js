@@ -1,3 +1,4 @@
+// ====================slider-settings============================
 const sliderReview = new Swiper('.reviews-cards-container', {
   // slidesPerView: 1,
   spaceBetween: 16,
@@ -41,3 +42,4 @@ const sliderProd = new Swiper('.prod-list-container', {
     },
   },
 });
+// ==============================================================
