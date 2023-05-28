@@ -119,10 +119,47 @@ body:nth-last-child(1) {
     min-height: 50px;
    }
 
+   .sellers-item {
+    margin: 0;
+  }
 
   }
 
 
 
 @media screen and (min-width: 1200px) {
+  .sellers-section {
+    max-width: 1200px;
+    padding: 72px 32px;
+  }
+
+.sellers-list {
+  gap: 32px 16px;
+
 }
+
+  .sellers-item {
+    margin: 0;
+  }
+
+  .sellers-item:nth-last-child(3) {
+    display: block;
+  }
+
+  .sellers-list  img {
+    width: 368px;
+    height: 464px;
+  }
+
+  .sellers-item-text {
+    width: 407px;
+
+}
+
+.sellers-item-text{
+
+}
+
+
+}
+
