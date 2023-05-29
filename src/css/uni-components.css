@@ -150,14 +150,13 @@
   padding: 6px 16px;
   height: 24px;
 }
-.text-button-decoration:hover,
-.text-button-decoration:focus {
+.text-button-decoration-first {
   background-color: #fd9222;
   color: #ffffff;
 }
 
 /* Tablet */
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
@@ -186,7 +185,7 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1136px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -213,5 +212,8 @@
   }
   .curtains {
     padding: 20px;
+  }
+  .description-curtains {
+    margin-top: 5px;
   }
 }
