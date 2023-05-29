@@ -4,10 +4,34 @@
     <h2 id="top-sellers-id" class="sellers-title"><span>Top</span> Sellers</h2>
     <ul class="sellers-list">
       <li class="sellers-item">
-        <img srcset="
-        ./img/sellers/2x/1d.jpg 2x,
-        ./img/sellers/3x/1d.jpg 3x"
-         src="./img/sellers/1x/1d.jpg" alt="soon will be picture" />
+        <picture>
+          <source
+            srcset="
+              ./img/sellers/1desktop.jpg 1x,
+              ./img/sellers/1desktop_2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./img/sellers/1tablet.jpg    1x,
+              ./img/sellers/1tablet_2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/sellers/1mobile.jpg    1x,
+              ./img/sellers/1mobile_2x.jpg 2x
+            "
+            media="(max-width: 768px)"
+          />
+          <img
+            srcset="./img/sellers/1desktop_2x.jpg 2x"
+            src="./img/sellers/1desktop.jpg"
+            alt="Soon here will be photo..."
+          />
+        </picture>
       </li>
       <li class="sellers-item">
         <p class="sellers-item-text">
@@ -17,15 +41,20 @@
         </p>
       </li>
       <li class="sellers-item">
-        <img srcset="
-        ./img/sellers/2x/2d.jpg 2x,
-        ./img/sellers/3x/2d.jpg 3x"
-         src="./img/sellers/1x/2d.jpg" alt="soon will be picture" />
+        <picture>
+          <source srcset="./img/sellers/2desktop.jpg 1x, ./img/sellers/2desktop_2x.jpg 2x" media="(min-width: 1200px)" />
+          <source srcset="./img/sellers/2tablet.jpg 1x, ./img/sellers/2tablet_2x.jpg 2x" media="(min-width: 768px)" />
+          <source srcset="./img/sellers/2mobile.jpg 1x, ./img/sellers/2mobile_2x.jpg 2x" media="(max-width: 768px)" />
+          <img  srcset="./img/sellers/2desktop_2x.jpg 2x" src="./img/sellers/2desktop.jpg" alt="Soon here will be photo..."/>
+          </picture>
       </li>
       <li class="sellers-item">
-        <img srcset="
-        ./img/sellers/2x/3d.jpg 2x,
-        ./img/sellers/3x/3d.jpg 3x" src="./img/sellers/1x/3d.jpg" alt="soon will be picture" />
+        <picture>
+          <source srcset="./img/sellers/3desktop.jpg 1x, ./img/sellers/3desktop_2x.jpg 2x" media="(min-width: 1200px)" />
+          <source srcset="./img/sellers/3tablet.jpg 1x, ./img/sellers/3tablet_2x.jpg 2x" media="(min-width: 768px)" />
+          <source srcset="./img/sellers/3mobile.jpg 1x, ./img/sellers/3mobile_2x.jpg 2x" media="(max-width: 768px)" />
+          <img  srcset="./img/sellers/3desktop_2x.jpg 2x" src="./img/sellers/3desktop.jpg" alt="Soon here will be photo..."/>
+          </picture>
       </li>
       <li class="sellers-item">
         <button data-modal-open type="button" class="sellers-modal-buy-now">
