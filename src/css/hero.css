@@ -1,5 +1,6 @@
 .hero-section {
     margin: 0 auto;
+    padding-bottom: 72px;
 }
 
 .hero-container {
@@ -7,6 +8,8 @@
     max-width: 335px;
     min-height: 620px;
     max-height: 620px;
+    padding-right: 20px;
+    padding-left: 20px;
     background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/chocolate-hero1x.jpg);
 }
 
