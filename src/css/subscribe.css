@@ -62,9 +62,9 @@
 } */
 /* ============================= 768 =================== */
 @media screen and (min-width: 768px) {
-  .container {
+  /* .container {
     max-width: 768px;
-  }
+  } */
 
   .subscribe {
     padding-top: 72px;
@@ -94,9 +94,9 @@
 /* ==========================  1200  ====================== */
 
 @media screen and (min-width: 1200px) {
-  .container {
+  /* .container {
     max-width: 1200px;
-  }
+  } */
   .subscribe {
     max-width: 1200px;
     background-image: url(../img/Subcribe-pic/Subcribe3.jpg);
