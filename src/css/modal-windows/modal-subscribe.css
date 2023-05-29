@@ -9,7 +9,7 @@
   position: absolute;
   width: 311px;
   min-height: 350px;
-  background-color: #fafafa;
+  background-color: var(--white-bg);
   border-radius: 15px;
   background-image: url(../../img/Subcribe-pic/Sub-Mod1.jpg);
   background-size: contain;
@@ -28,9 +28,11 @@
   align-items: center;
   margin-left: auto;
   padding: 0;
+  border: none;
+  background-color: transparent;
 }
 .subscribe-icon {
-
+  stroke: var(--snow-white);
 }
 .is-hidden {
   opacity: 0;
@@ -42,19 +44,20 @@
   bottom: 32px;
 }
 .title-modal-menu {
-  color: #111111;
+  color: var(--primary-black);
   display: block;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 24px;
   margin-left: 24px;
+  text-transform: uppercase;
 }
 .title-modal-span {
-  color: #fd9222;
+  color: var(--brand-color);
 }
 .subscribe-input {
-  color: #111111;
+  color: var(--primary-black);
   border: 1px solid rgba(64, 64, 64, 0.3);
   border-radius: 100px;
   min-width: 263px;
@@ -71,9 +74,9 @@
   line-height: 1.21;
 }
 .button-subscribe-submit {
-  color: #ffffff;
-  background-color: #fd9222;
-  font-family: 'Montserrat';
+  color: var(--snow-white);
+  background-color: var(--brand-color);
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -88,8 +91,8 @@
 }
 .button-subscribe-submit:hover,
 .button-subscribe-submit:focus {
-  color: #fd9222;
-  background-color: #fcf1e0;
+  color: var(--brand-color);
+  background-color: var(--btn-hover);
 }
 /* ======================== Modal 768 =================== */
 

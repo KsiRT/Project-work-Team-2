@@ -1,13 +1,13 @@
 .footer {
   padding: 32px 0;
-  background-color: #1e1823;
+  background-color: var(--dark-violet);
   margin: 0 auto;
   max-width: 100%;
 }
 
 .footer-tagline {
-  color: #ffffff;
-  font-family: 'Montserrat';
+  color: var(--snow-white);
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -16,7 +16,7 @@
   margin-bottom: 32px;
 }
 .footer-tagline-color {
-  color: #fd9222;
+  color: var(--brand-color);
 }
 /* ------------------Address------------- */
 .footer-address,
@@ -26,12 +26,11 @@
 }
 .footer-address {
   display: block;
-  margin: 0;
 }
 
 .footer-address-title {
-  color: #ffffff;
-  font-family: 'Montserrat';
+  color: var(--snow-white);
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -39,10 +38,11 @@
   margin-bottom: 14px;
 }
 .footer-address-list {
+  margin-bottom: 4px;
 }
 .footer-address-link {
-  color: #ffffff;
-  font-family: 'Montserrat';
+  color: var(--snow-white);
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -55,11 +55,14 @@
 }
 
 .footer-social-icon {
-  fill: #ffffff;
+  stroke: var(--snow-white);
+  fill: transparent;
+  transition: stroke 100ms cubic-bezier(0.11, 0.44, 0.82, 0.44);
 }
+
 .footer-link-anchor {
-  color: #ffffff;
-  font-family: 'Montserrat';
+  color: var(--snow-white);
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -81,6 +84,7 @@
   margin-top: 32px;
   margin-bottom: 32px;
 }
+
 .footer-site-nav {
   margin: 0;
 }
@@ -89,22 +93,24 @@
   justify-content: space-between;
   align-items: baseline;
 }
+
 /* ====================== 768 ==================== */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 738px;
-  }
+  .footer > .container {
+    max-width: 768px;
+  } 
   .footer {
     padding: 50px 0;
   }
 
   .footer-tagline {
-    color: #ffffff;
-    font-family: 'Montserrat';
+    color: var(--snow-white);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 28px;
     line-height: 1.21;
     display: block;
+    margin-bottom: 54px;
   }
   .footer-social {
     gap: 21px;
@@ -131,9 +137,6 @@
 }
 /* ============================= 1200 ==================== */
 @media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
   .footer-address-social {
     gap: 65px;
   }
