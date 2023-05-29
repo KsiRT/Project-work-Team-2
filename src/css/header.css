@@ -24,6 +24,8 @@
   min-width: 335px;
   max-width: 375px;
   margin: 0 auto;
+  max-width: 335px;
+  min-width: 335px
 }
 
 .header-navigation {}
