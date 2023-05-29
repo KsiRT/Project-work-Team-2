@@ -6,6 +6,7 @@
 .hero-container {
     border-radius: 30px;
     max-width: 335px;
+    min-width: 335px;
     min-height: 620px;
     max-height: 620px;
     padding-right: 20px;
