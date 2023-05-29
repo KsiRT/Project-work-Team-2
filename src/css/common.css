@@ -4,15 +4,15 @@ body {
   line-height: 1.21;
   background-color: var(--white-bg);
 }
-/* 
+
 .container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* max-width: 375px; */
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
   margin: 0 auto;
-  outline: 2px violet dotted;
-  overflow: hidden;
-} */
+  /* outline: 2px violet dotted; */
+  /* overflow: hidden; */
+}
 
 .list {
   list-style: none;
