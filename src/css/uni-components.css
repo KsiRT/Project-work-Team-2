@@ -1,0 +1,217 @@
+/* .container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.img-components-chocolate {
+  height: auto;
+  background: #fd9222;
+  border-radius: 15px;
+  padding: 28px 55px 71px;
+}
+.img-components-milk {
+  height: auto;
+  background: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+  padding: 28px 55px 71px;
+}
+.img-components-nuts {
+  height: auto;
+  background: #1e1823;
+  border-radius: 15px;
+  padding: 28px 55px 71px;
+}
+.img-components-cofe {
+  height: auto;
+  background: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+  padding: 28px 55px 71px;
+}
+.name-components-white {
+  font-family: 'Montserrat-600', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+  text-transform: uppercase;
+  bottom: 28px;
+  left: 28px;
+  position: absolute;
+}
+.name-components-black {
+  font-family: 'Montserrat-600', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #111111;
+  text-transform: uppercase;
+  display: block;
+  bottom: 28px;
+  left: 28px;
+  position: absolute;
+}
+.curtains-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.curtains {
+  position: absolute;
+  top: 0;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 28px;
+  border-color: #fd9222;
+  border-radius: 15px;
+}
+.element-components {
+  display: block;
+  border-radius: 15px;
+}
+.element-components:hover,
+.element-components:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.element-components:hover .curtains,
+.element-components:focus .curtains {
+  transform: translateY(0);
+}
+.description-curtains {
+  font-family: 'Montserrat-400', sans-serif;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+  color: #111111;
+  margin-top: 14px;
+}
+.title-curts {
+  font-family: 'Montserrat-600', sans-serif;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 8px;
+}
+.title-components {
+  font-family: 'Montserrat-600', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  width: 283px;
+  margin-bottom: 24px;
+  padding-top: 72px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.colortext {
+  color: #fd9222;
+}
+.description-components {
+  font-family: 'Montserrat-400', sans-serif;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  letter-spacing: -0.02em;
+  padding: 0 28px 0 28px;
+  margin-bottom: 32px;
+  width: 335px;
+}
+.list-components {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.pseudo-button {
+  display: flex;
+  gap: 6px;
+}
+.text-button-decoration {
+  font-family: 'Montserrat-400', sans-serif;
+  font-size: 10px;
+  line-height: 1.2;
+  display: flex;
+  gap: 6px;
+  background: #fafafa;
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+  height: 24px;
+}
+.text-button-decoration:hover,
+.text-button-decoration:focus {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+
+/* Tablet */
+@media screen and (min-width: 704px) {
+  .container {
+    max-width: 768px;
+  }
+  .title-components {
+    width: 411px;
+    font-size: 24px;
+    line-height: 1.16;
+    justify-content: center;
+    gap: 32px;
+  }
+  .list-components {
+    justify-content: center;
+    gap: 32px;
+    margin-top: 50px;
+  }
+  .description-components {
+    width: 486px;
+    margin: 0 auto;
+  }
+  .list-components li:nth-child(3) {
+    order: 4;
+  }
+  .list-components li:nth-child(2) {
+    order: 3;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1136px) {
+  .container {
+    max-width: 1200px;
+  }
+  .img-components-chocolate,
+  .img-components-cofe,
+  .img-components-nuts,
+  .img-components-milk {
+    width: 270px;
+    padding: 28px 36px 82px 28px;
+  }
+  .curtains {
+    padding: 20px;
+  }
+  .list-components {
+    margin-top: 50px;
+    flex-wrap: nowrap;
+    gap: 19px;
+  }
+  .list-components li:nth-child(3) {
+    order: unset;
+  }
+  .list-components li:nth-child(2) {
+    order: unset;
+  }
+  .curtains {
+    padding: 20px;
+  }
+}
