@@ -59,6 +59,10 @@
   fill: transparent;
   transition: stroke 100ms cubic-bezier(0.11, 0.44, 0.82, 0.44);
 }
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  stroke: var(--brand-color);
+}
 
 .footer-link-anchor {
   color: var(--snow-white);
@@ -96,7 +100,7 @@
 
 /* ====================== 768 ==================== */
 @media screen and (min-width: 768px) {
-  .footer > .container {
+  .footer-wrap-container {
     max-width: 768px;
   }
   .footer {
@@ -137,7 +141,7 @@
 }
 /* ============================= 1200 ==================== */
 @media screen and (min-width: 1200px) {
-  .footer > .container {
+  .footer-wrap-container {
     max-width: 1200px;
   }
   .footer-address-social {
