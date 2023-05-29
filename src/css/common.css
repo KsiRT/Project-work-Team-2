@@ -6,9 +6,9 @@ body {
 }
 
 .container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* max-width: 375px; */
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
   margin: 0 auto;
   /* outline: 2px violet dotted; */
   /* overflow: hidden; */

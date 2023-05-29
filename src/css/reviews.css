@@ -19,9 +19,6 @@
 .reviews-cards-container {
   max-width: 335px;
 }
-/* .reviews-cards {
-  align-items: stretch;
-} */
 .reviews-card {
   max-width: 335px;
   min-height: 240px;
@@ -65,7 +62,8 @@
   margin-bottom: 32px;
   bottom: 0 !important;
 }
-.reviews-cards-container .swiper-pagination-bullet {
+.reviews-cards-container .swiper-pagination-bullet,
+.prod-list-container .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
   background-color: rgb(17, 17, 17);
@@ -73,11 +71,26 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 7px;
 }
-.reviews-cards-container .swiper-pagination-bullet-active {
+.reviews-cards-container .swiper-pagination-bullet-active,
+.prod-list-container .swiper-pagination-bullet-active {
   background-color: var(--brand-color);
   width: 28px;
   border-radius: 100px;
+  animation-name: bullet-moove;
+  animation-duration: 300ms;
+  animation-timing-function: cubic-bezier(0.47, 3.34, 0.77, -0.66);
 }
+
+@keyframes bullet-moove {
+  0% {
+    transform: scaleX(0.5);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
 /* ============================================================== */
 .review-btn {
   font-family: 'Montserrat-600', sans-serif;

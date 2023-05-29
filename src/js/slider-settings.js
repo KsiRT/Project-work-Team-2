@@ -1,11 +1,15 @@
-new Swiper('.swiper', {
-  // slidesPerView: 1,
+// ====================slider-settings============================
+const sliderReview = new Swiper('.reviews-cards-container', {
   spaceBetween: 16,
   loop: true,
   mousewheel: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+  autoplay: {
+    delay: 2000,
+    pauseOnMouseEnter: true,
   },
   grabCursor: true,
   breakpoints: {
@@ -21,3 +25,24 @@ new Swiper('.swiper', {
     },
   },
 });
+const sliderProd = new Swiper('.prod-list-container', {
+  slidesPerView: 1,
+  spaceBetween: 18,
+  mousewheel: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2.6,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+// ==============================================================
