@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -231,7 +232,7 @@
   .buy-modal-title-buy {
     font-size: 24px;
     line-height: 1.16;
-      }
+  }
 
 
   .buy-modal-top-item {
@@ -253,7 +254,7 @@
     justify-content: space-around;
   }
 
-  .buy-modal-personal-info{
+  .buy-modal-personal-info {
     flex-direction: row;
     gap: 20px
   }
@@ -262,7 +263,7 @@
     margin-right: 0;
     width: 96px;
     height: 33px;
-    }
+  }
 
   .buy-modal-top-item img {
     max-width: 107px;
@@ -272,77 +273,77 @@
     margin: 0px 0px 14px 0px;
   }
 
-.buy-modal-card-svg {
-  width: 30px;
-  height: 18px;
-}
+  .buy-modal-card-svg {
+    width: 30px;
+    height: 18px;
+  }
 
-.buy-modal-tel-svg {
-width: 32px;
-height: 23px;
-}
+  .buy-modal-tel-svg {
+    width: 32px;
+    height: 23px;
+  }
 
-#tel {
-  padding-left: 168px;
-}
+  #tel {
+    padding-left: 168px;
+  }
 
-.buy-modal-form-label{
-  font-size: 14px;
-}
+  .buy-modal-form-label {
+    font-size: 14px;
+  }
 
-.buy-modal-top {
-  margin-bottom: 66px;
-}
+  .buy-modal-top {
+    margin-bottom: 66px;
+  }
 
-.buy-modal-form-input {
-  height: 66px;
-  border-radius: 15px;
-}
+  .buy-modal-form-input {
+    height: 66px;
+    border-radius: 15px;
+  }
 
-/* TODO Check not last child */
-.buy-modal-section:not(:last-child) {
-  margin-bottom: 50px;
-}
+  /* TODO Check not last child */
+  .buy-modal-section:not(:last-child) {
+    margin-bottom: 50px;
+  }
 
-.buy-modal-form-input::placeholder {
-  font-size: 18px;
-  line-height: 1.7;
+  .buy-modal-form-input::placeholder {
+    font-size: 18px;
+    line-height: 1.7;
 
-}
+  }
 
-.buy-modal-tel-box p {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 32px;
+  .buy-modal-tel-box p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 32px;
 
-  font-family: 'Montserrat-500', sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-
-.buy-modal-card-svg {
-  right: 25px;
-
-}
+    font-family: 'Montserrat-500', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+  }
 
 
-#comment {
-  height: 137px;
-  padding-top: 16px;
-}
+  .buy-modal-card-svg {
+    right: 25px;
+
+  }
 
 
-.buy-modal-submit-btn {
-  margin-top: -30px;
-}
+  #comment {
+    height: 137px;
+    padding-top: 16px;
+  }
+
+
+  .buy-modal-submit-btn {
+    margin-top: -30px;
+  }
 
 
 }
 
 @media screen and (min-width: 1200px) {
   .buy-modal {
-    overflow-y:unset;
+    overflow-y: unset;
   }
 
 
