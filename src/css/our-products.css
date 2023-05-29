@@ -26,6 +26,11 @@
   background-color: #ffffff;
   max-width: 335px;
 }
+.prod-item:hover,
+.prod-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .chok-name {
   font-family: 'Montserrat-600', sans-serif;
@@ -49,13 +54,22 @@
 .chok-price {
   font-family: 'Montserrat-600', sans-serif;
   display: block;
-  background: #fafafa;
+  background-color: #fafafa;
+  color: var(--primary-black);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   min-width: 94px;
   font-size: 14px;
   padding: 8px 20px;
   min-height: 33px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.chok-price:hover,
+.chok-price:focus {
+  background-color: var(--brand-color);
+  color: var(--snow-white);
 }
 .prod-list-container .swiper-pagination {
   margin-bottom: 0;

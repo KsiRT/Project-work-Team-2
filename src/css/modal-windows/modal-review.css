@@ -80,7 +80,6 @@
   padding: 14px 18px;
   border-radius: 8px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
 }
 .review-form-input::placeholder,
 .review-form-message::placeholder {
@@ -88,15 +87,9 @@
   align-items: center;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 .review-input-phone {
-  padding-left: 92px;
-}
-.review-input-phone::placeholder {
-  border-left: 1.5px solid rgba(0, 0, 0, 0.1);
-  padding-left: 14px;
+  padding-left: 107px;
 }
 .user-phone-container {
   position: relative;
@@ -127,8 +120,14 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+.input-vertical-line {
+  width: 2px;
+  height: 32px;
+  background-color: rgba(64, 64, 64, 0.3);
+}
 .review-form-message {
   font-family: 'Montserrat-500', sans-serif;
+  font-weight: 500;
   font-size: 14px;
   align-items: center;
   letter-spacing: -0.02em;
@@ -136,7 +135,8 @@
   resize: none;
   padding: 14px 18px;
   width: 100%;
-  min-height: 91px;
+  height: 135px;
+
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 8px;
 }
@@ -190,10 +190,7 @@
     font-size: 18px;
   }
   .review-input-phone {
-    padding-left: 149px;
-  }
-  .review-input-phone::placeholder {
-    padding-left: 28px;
+    padding-left: 177px;
   }
   .flag-prenumber-container {
     left: 24px;
@@ -205,6 +202,9 @@
   .input-phone-flag {
     width: 32px;
     height: 24px;
+  }
+  .input-vertical-line {
+    margin-left: 14px;
   }
   .review-form-submit-btn {
     padding: 14px 40px;
