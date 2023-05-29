@@ -1,12 +1,15 @@
 // ====================slider-settings============================
 const sliderReview = new Swiper('.reviews-cards-container', {
-  // slidesPerView: 1,
   spaceBetween: 16,
   loop: true,
   mousewheel: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+  autoplay: {
+    delay: 2000,
+    pauseOnMouseEnter: true,
   },
   grabCursor: true,
   breakpoints: {

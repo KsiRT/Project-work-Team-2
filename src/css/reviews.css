@@ -19,9 +19,6 @@
 .reviews-cards-container {
   max-width: 335px;
 }
-/* .reviews-cards {
-  align-items: stretch;
-} */
 .reviews-card {
   max-width: 335px;
   min-height: 240px;
@@ -79,7 +76,21 @@
   background-color: var(--brand-color);
   width: 28px;
   border-radius: 100px;
+  animation-name: bullet-moove;
+  animation-duration: 300ms;
+  animation-timing-function: cubic-bezier(0.47, 3.34, 0.77, -0.66);
 }
+
+@keyframes bullet-moove {
+  0% {
+    transform: scaleX(0.5);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
 /* ============================================================== */
 .review-btn {
   font-family: 'Montserrat-600', sans-serif;
