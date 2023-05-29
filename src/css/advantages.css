@@ -72,7 +72,7 @@
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-  .container {
+  .section-advantages {
     max-width: 1200px;
   }
   .section-adv-list {
