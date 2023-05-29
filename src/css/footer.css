@@ -37,7 +37,7 @@
   line-height: 18px;
   margin-bottom: 14px;
 }
-.footer-address-list {
+.footer-address-list:not(:last-child) {
   margin-bottom: 4px;
 }
 .footer-address-link {
@@ -51,7 +51,7 @@
 .footer-social {
   display: flex;
   gap: 16px;
-  margin: 0;
+  /* margin: 0; */
 }
 
 .footer-social-icon {
@@ -98,7 +98,7 @@
 @media screen and (min-width: 768px) {
   .footer > .container {
     max-width: 768px;
-  } 
+  }
   .footer {
     padding: 50px 0;
   }
@@ -137,6 +137,9 @@
 }
 /* ============================= 1200 ==================== */
 @media screen and (min-width: 1200px) {
+  .footer > .container {
+    max-width: 1200px;
+  }
   .footer-address-social {
     gap: 65px;
   }
