@@ -18,14 +18,17 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
-  /* padding-right: 20px;
-    padding-left: 20px; */
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 14px;
+  min-width: 335px;
+  max-width: 375px;
   margin: 0 auto;
+  max-width: 335px;
+  min-width: 335px
 }
 
-.header-navigation {
-}
+.header-navigation {}
 
 .header-logo {
   display: flex;
@@ -45,8 +48,7 @@
   letter-spacing: -0.03em;
 }
 
-.header-logo-svg {
-}
+.header-logo-svg {}
 
 .header-burger-button {
   background-color: transparent;
