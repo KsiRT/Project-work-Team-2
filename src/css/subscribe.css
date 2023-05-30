@@ -1,22 +1,24 @@
 .subscribe {
-  padding-top: 62px;
-  padding-bottom: 63px;
   background-color: var(--dark-violet);
-  text-align: center;
-  max-width: 375px;
-  margin: 0 auto;
   background-image: url(../img/Subcribe-pic/Subcribe.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+.subscribe-container {
+  padding: 62px 20px;
+  text-align: center;
+  max-width: 375px;
+  margin: 0 auto;
+}
 .title-subscribe {
   color: var(--snow-white);
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 600;
+  font-family: 'Montserrat-600', sans-serif;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: center;
   margin: 0 auto;
   max-width: 291px;
   margin-bottom: 24px;
@@ -24,30 +26,28 @@
 }
 .text-subscribe {
   color: var(--snow-white);
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Montserrat-400', sans-serif;
   font-size: 14px;
   line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
   margin: 0 auto;
   max-width: 326px;
   margin-bottom: 24px;
 }
 .button-subscribe {
+  display: block;
   color: var(--snow-white);
   background-color: var(--brand-color);
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 600;
+  font-family: 'Montserrat-600', sans-serif;
   font-size: 14px;
-  line-height: 1.21;
+
   border-radius: 100px;
   margin: 0 auto;
   padding: 12px 28px;
-  height: 41px;
-  min-width: 128px;
   border: none;
-  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-subscribe:hover,
 .button-subscribe:focus {
@@ -55,50 +55,34 @@
   background-color: var(--btn-hover);
 }
 
-/* @media screen and (min-width: 375px) {
-  .container {
-    max-width: 373px;
-  }
-} */
 /* ============================= 768 =================== */
 @media screen and (min-width: 768px) {
-  /* .container {
-    max-width: 768px;
-  } */
-
   .subscribe {
-    padding-top: 72px;
-    padding-bottom: 72px;
-    max-width: 768px;
     background-image: url(../img/Subcribe-pic/Subcribe2.jpg);
   }
+  .subscribe-container {
+    max-width: 768px;
+    padding: 72px 150px;
+  }
   .title-subscribe {
-    font-weight: 600;
     font-size: 24px;
-    line-height: 1.16;
+    line-height: 1.17;
     max-width: 378px;
-    margin-bottom: 24px;
   }
   .text-subscribe {
     max-width: 467px;
   }
   .button-subscribe {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.22;
     padding: 14px 40px;
-    height: 50px;
-    min-width: 172px;
   }
 }
 /* ==========================  1200  ====================== */
 
 @media screen and (min-width: 1200px) {
-  /* .container {
-    max-width: 1200px;
-  } */
   .subscribe {
+    background-image: url(../img/Subcribe-pic/Subcribe2.jpg);
+  }
+  .subscribe-container {
     max-width: 1200px;
-    background-image: url(../img/Subcribe-pic/Subcribe3.jpg);
   }
 }
