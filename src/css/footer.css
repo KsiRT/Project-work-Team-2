@@ -1,10 +1,12 @@
 .footer {
-  padding: 32px 0;
   background-color: var(--dark-violet);
   margin: 0 auto;
   max-width: 100%;
 }
-
+.footer-wrap-container {
+  padding: 32px 20px;
+  max-width: 375px;
+}
 .footer-tagline {
   color: var(--snow-white);
   font-family: 'Montserrat', sans-serif;
@@ -109,9 +111,7 @@
 @media screen and (min-width: 768px) {
   .footer-wrap-container {
     max-width: 768px;
-  }
-  .footer {
-    padding: 50px 0;
+    padding: 50px 32px;
   }
 
   .footer-tagline {
