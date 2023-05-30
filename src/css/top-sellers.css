@@ -21,6 +21,7 @@
 
 .sellers-list img {
   border-radius: 15px;
+  margin: 0 auto;
   margin-bottom: 20px;
   display: block;
   max-width: 100%;
@@ -34,8 +35,10 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  /* text-align: justify; */
+  width: 335px;
+  margin: 0 auto;
 }
+
 .sellers-modal-buy-now {
   margin: 0 auto;
   display: block;
@@ -51,7 +54,7 @@
   padding: 0 auto;
 }
 
-.sellers-item:nth-last-child(3) {
+.sellers-item:nth-last-child(2) {
   display: none;
 }
 
@@ -134,7 +137,7 @@
     margin: 0;
   }
 
-  .sellers-item:nth-last-child(3) {
+  .sellers-item:nth-last-child(2) {
     display: block;
   }
 

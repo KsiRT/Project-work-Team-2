@@ -92,15 +92,11 @@
   max-height: 69px;
   width: 84px;
   height: 69px;
-
 }
 
 .buy-modal-position-weight {
   font-family: 'Montserrat-600', sans-serif;
-  /* font-style: normal; */
-  /* font-weight: 600; */
   font-size: 1.7;
-
   width: 73px;
   height: 29px;
   background: #fafafa;
@@ -119,7 +115,6 @@
 
 .buy-modal-section {
   position: relative;
-  /* margin-bottom: 40px; */
 }
 
 .buy-modal-section:not(:last-child) {
@@ -127,14 +122,11 @@
 }
 
 .buy-modal-form-label {
-  /* display: block; */
   position: absolute;
   top: -8px;
   left: 0;
   transform: translateY(-100%);
   font-family: 'Montserrat-500', sans-serif;
-  /* font-style: normal; */
-  /* font-weight: 500; */
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
@@ -148,11 +140,8 @@
 
 .buy-modal-form-input::placeholder {
   font-family: 'Montserrat-400', sans-serif;
-  /* font-style: normal;
-  font-weight: 400; */
   font-size: 14px;
   line-height: 1.5;
-  /* identical to box height */
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
@@ -203,11 +192,9 @@
   display: block;
   font-family: 'Montserrat-600', sans-serif;
   font-style: normal;
-  /* font-weight: 600; */
   font-size: 14px;
   line-height: 1.2;
   color: white;
-
   background-color: #fd9222;
   border: none;
   border-radius: 100px;
@@ -224,18 +211,15 @@
 
 @media screen and (min-width: 768px) {
   .buy-modal {
-    /* max-width: 768px; */
     max-width: 609px;
     max-height: 100vh;
     padding: 48px;
   }
 
-
   .buy-modal-title-buy {
     font-size: 24px;
     line-height: 1.16;
   }
-
 
   .buy-modal-top-item {
     max-width: 160px;
@@ -258,7 +242,7 @@
 
   .buy-modal-personal-info {
     flex-direction: row;
-    gap: 20px
+    gap: 20px;
   }
 
   .buy-modal-position-weight {
@@ -303,16 +287,7 @@
   }
 
   /* TODO Check not last child */
-  .buy-modal-section:not(:last-child) {
-    margin-bottom: 50px;
-  }
-
-  .buy-modal-form-input::placeholder {
-    font-size: 18px;
-    line-height: 1.7;
-
-  }
-
+ 
   .buy-modal-tel-box p {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -321,32 +296,33 @@
     font-family: 'Montserrat-500', sans-serif;
     font-size: 18px;
     line-height: 22px;
-  }
-
-
-  .buy-modal-card-svg {
-    right: 25px;
 
   }
 
+  /* Check not last child */
+  .buy-modal-section:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .buy-modal-form-input::placeholder {
+    font-size: 18px;
+    line-height: 1.7;
+  }
 
   #comment {
     height: 137px;
     padding-top: 16px;
   }
 
+  .buy-modal-card-svg {
+    right: 25px;
+    }
+  .buy-modal-submit-btn {
+    margin-top: -30px;
+
+  }
 
   .buy-modal-submit-btn {
     margin-top: -30px;
   }
-
-
-}
-
-@media screen and (min-width: 1200px) {
-  .buy-modal {
-    overflow-y: unset;
-  }
-
-
 }
