@@ -159,12 +159,27 @@
     }
 
     .header-destp-link {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
         transition: color 100ms cubic-bezier(.11, .44, .82, .44);
+
     }
 
     .header-destp-link:hover,
     .header-destp-link:focus {
         color: var(--brand-color);
+    }
+
+    .header-destp-link:hover:after,
+    .header-destp-link:focus:after {
+        content: "  ";
+        position: absolute;
+        color: var(--brand-color);
+        margin-top: 24px;
+        width: 24px;
+        height: 0px;
+        border: 1px solid #FD9222;
     }
 
     .header-destp-soc-list {

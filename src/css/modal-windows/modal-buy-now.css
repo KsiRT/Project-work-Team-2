@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -285,6 +286,19 @@
     border-radius: 15px;
   }
 
+  /* TODO Check not last child */
+ 
+  .buy-modal-tel-box p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 32px;
+
+    font-family: 'Montserrat-500', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+
+  }
+
   /* Check not last child */
   .buy-modal-section:not(:last-child) {
     margin-bottom: 50px;
@@ -295,32 +309,20 @@
     line-height: 1.7;
   }
 
-  .buy-modal-tel-box p {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 32px;
-
-    font-family: 'Montserrat-500', sans-serif;
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .buy-modal-card-svg {
-    right: 25px;
-  }
-
   #comment {
     height: 137px;
     padding-top: 16px;
   }
 
+  .buy-modal-card-svg {
+    right: 25px;
+    }
+  .buy-modal-submit-btn {
+    margin-top: -30px;
+
+  }
+
   .buy-modal-submit-btn {
     margin-top: -30px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  /* .buy-modal {
-    overflow-y:unset;
-  } */
 }
