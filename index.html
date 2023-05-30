@@ -15,7 +15,7 @@
     />
     
     <script type="module" crossorigin src="/Project-work-Team-2/assets/index-9f97a34c.js"></script>
-    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-2bea79a0.css">
+    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-05cdb2d5.css">
   </head>
   <body>
     <!--! Loads the specified .html file !-->
@@ -507,8 +507,28 @@
     <h2 id="top-sellers-id" class="sellers-title"><span>Top</span> Sellers</h2>
     <ul class="sellers-list">
       <li class="sellers-item">
-        <img srcset="/Project-work-Team-2/assets/1d-89b33f5d.jpg 2x, /Project-work-Team-2/assets/1d-89b33f5d.jpg 3x"
-         src="/Project-work-Team-2/assets/1d-89b33f5d.jpg" alt="soon will be picture" />
+        <picture>
+          <source
+            srcset="/Project-work-Team-2/assets/1desktop-6187630e.jpg 1x, /Project-work-Team-2/assets/1desktop_2x-9b1fbcea.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./img/sellers/1tablet.jpg    1x,
+              ./img/sellers/1tablet_2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/Project-work-Team-2/assets/1mobile-7596655a.jpg 1x, /Project-work-Team-2/assets/1mobile_2x-efbf2ff1.jpg 2x"
+            media="(max-width: 768px)"
+          />
+          <img
+            srcset="/Project-work-Team-2/assets/1desktop_2x-9b1fbcea.jpg 2x"
+            src="/Project-work-Team-2/assets/1desktop-6187630e.jpg"
+            alt="Soon here will be photo..."
+          />
+        </picture>
       </li>
       <li class="sellers-item">
         <p class="sellers-item-text">
@@ -518,11 +538,52 @@
         </p>
       </li>
       <li class="sellers-item">
-        <img srcset="/Project-work-Team-2/assets/2d-41bef555.jpg 2x, /Project-work-Team-2/assets/2d-41bef555.jpg 3x"
-         src="/Project-work-Team-2/assets/2d-41bef555.jpg" alt="soon will be picture" />
+        <picture>
+          <source
+            srcset="/Project-work-Team-2/assets/2desktop-186bb463.jpg 1x, /Project-work-Team-2/assets/2desktop_2x-0d43b5ff.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="/Project-work-Team-2/assets/2tablet-ba550dba.jpg 1x, /Project-work-Team-2/assets/2tablet_2x-e2fb8ce6.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/Project-work-Team-2/assets/2mobile-ab29a671.jpg 1x, /Project-work-Team-2/assets/2mobile_2x-0c5faa64.jpg 2x"
+            media="(max-width: 768px)"
+          />
+          <img
+            srcset="/Project-work-Team-2/assets/2desktop_2x-0d43b5ff.jpg 2x"
+            src="/Project-work-Team-2/assets/2desktop-186bb463.jpg"
+            alt="Soon here will be photo..."
+          />
+        </picture>
       </li>
       <li class="sellers-item">
-        <img srcset="/Project-work-Team-2/assets/3d-b75124bb.jpg 2x, /Project-work-Team-2/assets/3d-b75124bb.jpg 3x" src="/Project-work-Team-2/assets/3d-b75124bb.jpg" alt="soon will be picture" />
+        <picture>
+          <source
+            srcset="/Project-work-Team-2/assets/3desktop-e8f0f42e.jpg 1x, /Project-work-Team-2/assets/3desktop_2x-de9ff664.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./img/sellers/3tablet.jpg    1x,
+              ./img/sellers/3tablet_2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/sellers/3mobile.jpg    1x,
+              ./img/sellers/3mobile_2x.jpg 2x
+            "
+            media="(max-width: 768px)"
+          />
+          <img
+            srcset="/Project-work-Team-2/assets/3desktop_2x-de9ff664.jpg 2x"
+            src="/Project-work-Team-2/assets/3desktop-e8f0f42e.jpg"
+            alt="Soon here will be photo..."
+          />
+        </picture>
       </li>
       <li class="sellers-item">
         <button data-modal-open type="button" class="sellers-modal-buy-now">
@@ -824,7 +885,7 @@
           placeholder="Enter card"
           pattern="[0-9\s]{13,19}"
           maxlength="19"
-          inputmode="numeric" required/>
+          inputmode="tel" required/>
         <svg class="buy-modal-card-svg" width="21" height="12">
           <use href="/Project-work-Team-2/assets/sprite-a88d66e4.svg#icon-Mastercard"></use>
         </svg>
