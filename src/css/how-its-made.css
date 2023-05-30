@@ -45,11 +45,24 @@
 }
 
 .recept-list-item {
+  position: relative;
   font-family: Montserrat-400, sans-serif;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--primary-black);
+}
+
+.recept-list-item::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  left: -13px;
+  top: 5px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
 }
 
 @media screen and (min-width: 768px) {
