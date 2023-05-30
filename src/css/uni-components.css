@@ -150,7 +150,7 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .container {
+  .uni-container {
     max-width: 768px;
   }
   .title-components {
@@ -181,7 +181,7 @@
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-  .container {
+  .uni-container {
     max-width: 1200px;
   }
   .img-components-chocolate,

@@ -1,6 +1,6 @@
-<div class="backdrop is-hidden js-menu-container">
+<div class="review-backdrop is-hidden reviews-modal-container">
   <div class="review-modal">
-    <button type="button" class="modal-close-btn js-close-menu">
+    <button type="button" class="modal-close-btn reviews-modal-close">
       <svg class="modal-close-icon" width="24" height="24">
         <use href="./img/sprite.svg#icon-close-btn"></use>
       </svg>
@@ -24,11 +24,13 @@
         id="review-form-email"
         type="email"
         placeholder="Enter your email"
+        required
       />
       <span class="user-phone-container"
         ><span class="flag-prenumber-container"
           ><span class="input-phone-flag"></span
-          ><span class="input-prenumber">+380</span></span
+          ><span class="input-prenumber">+380</span
+          ><span class="input-vertical-line"></span></span
         ><input
           class="review-form-input review-input-phone"
           name="user_phone"

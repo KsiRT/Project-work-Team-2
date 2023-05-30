@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,7 +10,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden {
+.hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -20,18 +21,18 @@
   top: 50%;
   left: 50%;
   max-width: 311px;
-  max-height: 994px;
+  max-height: 100vh;
   transform: translate(-50%, -50%) scale(1);
-  min-height: 576px;
   padding: 32px 24px;
   background-color: #fafafa;
   border-radius: 15px;
+  overflow-y: auto;
 }
 
 .buy-modal-close-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
   border: transparent;
   background-color: #fafafa;
@@ -41,17 +42,17 @@
 .buy-modal-close-btn:focus {
   color: #ffffff;
   border: none;
-  background-color: #404bbf;
 }
+
 .cross-icon {
   width: 24px;
   height: 24px;
 }
 
 .buy-modal-title-buy {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
+  font-family: 'Montserrat-600', sans-serif;
+  /* font-style: normal; */
+  /* font-weight: 600; */
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
@@ -67,12 +68,15 @@
 }
 
 .buy-modal-top {
+  margin-bottom: 54px;
 }
+
 .buy-modal-top-list {
   display: flex;
   gap: 8px;
   flex-direction: column;
 }
+
 .buy-modal-top-item {
   background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -86,21 +90,26 @@
   margin-left: 16px;
   max-width: 84px;
   max-height: 69px;
+  width: 84px;
+  height: 69px;
+
 }
 
 .buy-modal-position-weight {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
+  font-family: 'Montserrat-600', sans-serif;
+  /* font-style: normal; */
+  /* font-weight: 600; */
   font-size: 1.7;
 
-  width: 70px;
+  width: 73px;
   height: 29px;
   background: #fafafa;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   margin-right: 16px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* !========== !*/
@@ -110,19 +119,22 @@
 
 .buy-modal-section {
   position: relative;
-  margin-bottom: 24px;
+  /* margin-bottom: 40px; */
 }
-.buy-modal-form-label {
-  display: block;
 
+.buy-modal-section:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.buy-modal-form-label {
+  /* display: block; */
   position: absolute;
-  top: 0;
+  top: -8px;
   left: 0;
   transform: translateY(-100%);
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
+  font-family: 'Montserrat-500', sans-serif;
+  /* font-style: normal; */
+  /* font-weight: 500; */
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
@@ -135,9 +147,9 @@
 }
 
 .buy-modal-form-input::placeholder {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Montserrat-400', sans-serif;
+  /* font-style: normal;
+  font-weight: 400; */
   font-size: 14px;
   line-height: 1.5;
   /* identical to box height */
@@ -147,32 +159,194 @@
   color: rgba(64, 64, 64, 0.3);
 }
 
-.buy-modal-tel-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-right: 1px solid;
-}
 .buy-modal-form-input {
   display: block;
   width: 100%;
-  height: 24px;
+  height: 45px;
   border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 6px;
+  border-radius: 8px;
+  padding-left: 18px;
 }
 
-.modal-tel-input {
+#tel {
+  padding-left: 100px;
 }
 
-.buy-modal-tel-svg {
+.buy-modal-tel-box {
   position: absolute;
-  left: 16px;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
-  margin-top: 0;
-  padding-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 18px;
+  pointer-events: none;
+}
+
+.buy-modal-tel-box p {
+  border-right: 2px solid rgba(17, 17, 17, 0.1);
+  padding-right: 8px;
+}
+
+.buy-modal-card-svg {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 12px;
+  pointer-events: none;
 }
 
 .buy-modal-submit-btn {
   display: block;
+  font-family: 'Montserrat-600', sans-serif;
+  font-style: normal;
+  /* font-weight: 600; */
+  font-size: 14px;
+  line-height: 1.2;
+  color: white;
+
+  background-color: #fd9222;
+  border: none;
+  border-radius: 100px;
+  min-width: 109px;
+  min-height: 41px;
+  margin-top: -18px;
+}
+
+#comment {
+  height: 100px;
+  resize: vertical;
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .buy-modal {
+    /* max-width: 768px; */
+    max-width: 609px;
+    max-height: 100vh;
+    padding: 48px;
+  }
+
+
+  .buy-modal-title-buy {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+
+  .buy-modal-top-item {
+    max-width: 160px;
+    max-height: 196px;
+    width: 160px;
+    height: 196px;
+    padding: 24px 20px 18px 20px;
+  }
+
+  .buy-modal-top-list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .buy-modal-top-item {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .buy-modal-personal-info {
+    flex-direction: row;
+    gap: 20px
+  }
+
+  .buy-modal-position-weight {
+    margin-right: 0;
+    width: 96px;
+    height: 33px;
+  }
+
+  .buy-modal-top-item img {
+    max-width: 107px;
+    max-height: 120px;
+    width: 107px;
+    height: 120px;
+    margin: 0px 0px 14px 0px;
+  }
+
+  .buy-modal-card-svg {
+    width: 30px;
+    height: 18px;
+  }
+
+  .buy-modal-tel-svg {
+    width: 32px;
+    height: 23px;
+  }
+
+  #tel {
+    padding-left: 168px;
+  }
+
+  .buy-modal-form-label {
+    font-size: 14px;
+  }
+
+  .buy-modal-top {
+    margin-bottom: 66px;
+  }
+
+  .buy-modal-form-input {
+    height: 66px;
+    border-radius: 15px;
+  }
+
+  /* TODO Check not last child */
+  .buy-modal-section:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .buy-modal-form-input::placeholder {
+    font-size: 18px;
+    line-height: 1.7;
+
+  }
+
+  .buy-modal-tel-box p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 32px;
+
+    font-family: 'Montserrat-500', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+
+  .buy-modal-card-svg {
+    right: 25px;
+
+  }
+
+
+  #comment {
+    height: 137px;
+    padding-top: 16px;
+  }
+
+
+  .buy-modal-submit-btn {
+    margin-top: -30px;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  .buy-modal {
+    overflow-y: unset;
+  }
+
+
 }

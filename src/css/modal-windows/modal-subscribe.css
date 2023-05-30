@@ -1,0 +1,145 @@
+.backdrop-subscribe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: transparent;
+}
+.window-subscribe {
+  position: absolute;
+  width: 311px;
+  min-height: 350px;
+  background-color: var(--white-bg);
+  border-radius: 15px;
+  background-image: url(../../img/Subcribe-pic/Sub-Mod1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.button-subscribe-close {
+  top: 21px;
+  right: 20px;
+  border: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.subscribe-icon {
+  stroke: var(--snow-white);
+}
+.subscribe-icon:hover,
+.subscribe-icon:focus {
+  stroke: var(--brand-color);
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.menu-subscribe {
+  position: absolute;
+  bottom: 32px;
+}
+.title-modal-menu {
+  color: var(--primary-black);
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  text-transform: uppercase;
+}
+.title-modal-span {
+  color: var(--brand-color);
+}
+.subscribe-input {
+  color: var(--primary-black);
+  border: 1px solid rgba(64, 64, 64, 0.3);
+  border-radius: 100px;
+  min-width: 263px;
+  height: 45px;
+  padding-left: 18px;
+  position: relative;
+  left: 24px;
+  margin: 0 auto;
+}
+.subscribe-input::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+}
+.button-subscribe-submit {
+  color: var(--snow-white);
+  background-color: var(--brand-color);
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+  padding: 12px 22px;
+  height: 45px;
+  min-width: 100px;
+  border: none;
+  position: absolute;
+  right: 24px;
+}
+.button-subscribe-submit:hover,
+.button-subscribe-submit:focus {
+  color: var(--brand-color);
+  background-color: var(--btn-hover);
+}
+/* ======================== Modal 768 =================== */
+
+@media screen and (min-width: 768px) {
+  .window-subscribe {
+    width: 538px;
+    min-height: 412px;
+    background-image: url(../../img/Subcribe-pic/Sub-Mod2.jpg);
+  }
+  .button-subscribe-close {
+    top: 31px;
+    right: 31px;
+  }
+  .menu-subscribe {
+    bottom: 40px;
+  }
+  .title-modal-menu {
+    margin-bottom: 28px;
+    width: 298px;
+    margin-left: 40px;
+  }
+  .subscribe-input {
+    border-radius: 100px;
+    min-width: 313px;
+    height: 52px;
+    padding-left: 18px;
+    left: 40px;
+  }
+  .subscribe-input::placeholder {
+    color: rgba(64, 64, 64, 0.3);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .button-subscribe-submit {
+    font-size: 14px;
+    line-height: 1.21;
+    border-radius: 100px;
+    padding: 17px 33px;
+    height: 51px;
+    min-width: 137px;
+    margin-left: 40px;
+    position: unset;
+    right: 40px;
+  }
+}

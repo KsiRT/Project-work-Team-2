@@ -1,4 +1,4 @@
-.backdrop {
+.review-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -7,38 +7,57 @@
   height: 100%;
   background-color: rgb(0, 0, 0, 0.4);
 }
-.backdrop.is-hidden {
+.review-backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 .review-modal {
-  box-sizing: border-box;
   min-width: 311px;
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
-  background-color: #fafafa;
+  background-color: var(--white-bg);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 15px;
+  overflow-y: auto;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-backdrop.is-hidden .review-modal {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.6);
 }
 .modal-close-btn {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 14px;
   right: 14px;
   padding: 0;
   background-color: transparent;
   border: none;
+  border-radius: 50%;
+  color: var(--primary-black);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-icon {
-  stroke: black;
+  stroke: currentColor;
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--btn-hover);
+  color: var(--brand-color);
 }
 .review-modal-title {
   max-width: 255px;
-  font-weight: 600;
+  font-family: 'Montserrat-600', sans-serif;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
@@ -52,8 +71,7 @@
   gap: 14px;
 }
 .review-form-input {
-  box-sizing: border-box;
-  font-weight: 500;
+  font-family: 'Montserrat-500', sans-serif;
   font-size: 14px;
   align-items: center;
   letter-spacing: -0.02em;
@@ -62,27 +80,22 @@
   padding: 14px 18px;
   border-radius: 8px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
 }
 .review-form-input::placeholder,
 .review-form-message::placeholder {
-  font-weight: 400;
   font-size: 14px;
   align-items: center;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
 .review-input-phone {
-  padding-left: 92px;
-}
-.review-input-phone::placeholder {
-  border-left: 1.5px solid rgba(0, 0, 0, 0.1);
-  padding-left: 14px;
+  padding-left: 107px;
 }
 .user-phone-container {
   position: relative;
 }
 .flag-prenumber-container {
+  pointer-events: none;
   position: absolute;
   left: 18px;
   top: 50%;
@@ -101,14 +114,19 @@
   background-image: linear-gradient(#0057b7 50%, #ffd700 50%);
 }
 .input-prenumber {
-  font-weight: 500;
+  font-family: 'Montserrat-500', sans-serif;
   font-size: 14px;
   align-items: center;
   letter-spacing: -0.02em;
   color: #000000;
 }
+.input-vertical-line {
+  width: 2px;
+  height: 32px;
+  background-color: rgba(64, 64, 64, 0.3);
+}
 .review-form-message {
-  box-sizing: border-box;
+  font-family: 'Montserrat-500', sans-serif;
   font-weight: 500;
   font-size: 14px;
   align-items: center;
@@ -117,7 +135,8 @@
   resize: none;
   padding: 14px 18px;
   width: 100%;
-  min-height: 91px;
+  height: 135px;
+
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 8px;
 }
@@ -125,17 +144,17 @@
   width: fit-content;
   padding: 12px 28px;
   border-radius: 100px;
-  background-color: #fd9222;
-  font-weight: 600;
+  background-color: var(--brand-color);
+  font-family: 'Montserrat-600', sans-serif;
   font-size: 14px;
-  color: #ffffff;
-  border: 1px solid #fd9222;
+  color: var(--snow-white);
+  border: 1px solid var(--brand-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .review-form-submit-btn:hover,
 .review-form-submit-btn:focus {
-  background-color: #ffffff;
+  background-color: var(--snow-white);
   color: black;
 }
 @media screen and (min-width: 768px) {
@@ -171,10 +190,7 @@
     font-size: 18px;
   }
   .review-input-phone {
-    padding-left: 149px;
-  }
-  .review-input-phone::placeholder {
-    padding-left: 28px;
+    padding-left: 177px;
   }
   .flag-prenumber-container {
     left: 24px;
@@ -186,6 +202,9 @@
   .input-phone-flag {
     width: 32px;
     height: 24px;
+  }
+  .input-vertical-line {
+    margin-left: 14px;
   }
   .review-form-submit-btn {
     padding: 14px 40px;

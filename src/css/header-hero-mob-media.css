@@ -1,0 +1,219 @@
+@media screen and (min-width: 375px) {
+    .hero-section {
+        max-width: 375px;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2ddpx) {
+    .hero-container {
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/chocolate-hero2x.jpg);
+        background-size: 335px 621px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero-section {
+        padding-bottom: 50px;
+    }
+
+    .header-container {
+        max-width: 768px;
+        padding: 24px 32px;
+    }
+
+    .header-burger-button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .mob-menu {
+        width: 38vw;
+        padding: 24px 32px;
+    }
+
+    .mob-menu-close-btn {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 100px;
+    }
+
+    .mob-menu-close-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .mob-menu-soc-list {
+        bottom: 24px;
+    }
+
+    .mob-menu-soc-item {
+        max-height: 24px;
+    }
+
+    .mob-menu-soc-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hero-section {
+        max-width: 768px;
+    }
+
+    .hero-container {
+        max-width: 704px;
+        max-height: 890px;
+        min-height: 890px;
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/chocolate-hero-tab1x.jpg);
+        background-size: 704px 890px;
+    }
+
+    .hero-container-btns {
+        padding: 671px 20px 40px 20px
+    }
+
+    .hero-paragraph {
+        font-size: 28px;
+        line-height: 1.21;
+        width: 484px;
+    }
+
+    .hero-btns-div {
+        margin-bottom: 0;
+        margin-right: 120px;
+    }
+
+    .hero-scroll-button {
+        font-size: 14px;
+        line-height: 1.3;
+        gap: 14px;
+    }
+
+    .hero-scroll-div {
+        width: 38px;
+        height: 38px;
+    }
+
+    .hero-scroll-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2ddpx) {
+        .hero-container {
+            background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/chocolate-hero-tab2x.jpg);
+            background-size: 704px 890px;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .hero-section {
+        padding-bottom: 72px;
+    }
+
+    .header-container {
+        max-width: 1200px;
+        padding-bottom: 32px;
+    }
+
+    .header-logo {
+        font-size: 18px;
+        line-height: 1.1;
+        margin-right: 188px;
+    }
+
+    .header-burger-button {
+        display: none;
+    }
+
+    .header-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-destp-container {
+        display: flex;
+    }
+
+    .header-destp-list {
+        display: flex;
+        gap: 24px;
+        margin-right: 137px;
+    }
+
+    .header-destp-item {
+        font-family: 'Montserrat-500';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        color: var(--primary-black);
+    }
+
+    .header-destp-link {
+        transition: color 100ms cubic-bezier(.11, .44, .82, .44);
+    }
+
+    .header-destp-link:hover,
+    .header-destp-link:focus {
+        color: var(--brand-color);
+    }
+
+    .header-destp-soc-list {
+        display: flex;
+        gap: 18px;
+    }
+
+    .header-destp-soc-icon {
+        fill: transparent;
+        stroke: var(--primary-black);
+        transition: stroke 100ms cubic-bezier(.11, .44, .82, .44);
+    }
+
+    .header-destp-soc-icon:hover,
+    .header-destp-soc-icon:focus {
+        stroke: var(--brand-color);
+    }
+
+    .hero-section {
+        max-width: 1200px;
+    }
+
+    .hero-container {
+        max-width: 1136px;
+        max-height: 600px;
+        min-height: 600px;
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/chocolate-hero-desktop1x.jpg);
+        background-size: 1136px 600px;
+    }
+
+    .hero-container-btns {
+        padding: 381px 20px 40px 20px;
+    }
+
+    .hero-paragraph {
+        margin-right: 571px;
+    }
+
+    .hero-btns-div {
+        margin-right: 552px;
+        height: 45px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2ddpx) {
+        .hero-container {
+            background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/chocolate-hero-desktop2x.jpg);
+            background-size: 1136px 600px;
+        }
+    }
+}

@@ -1,9 +1,9 @@
 <!-- Modal Window -->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop hidden" data-modal>
   <div class="buy-modal">
     <button data-modal-close type="button" class="buy-modal-close-btn">
       <svg class="cross-icon" width="12" height="12">
-        <use href="../../img/sprite.svg#cross-icon"></use>
+        <use href="./img/sprite.svg#cross-icon"></use>
       </svg>
     </button>
     <p class="buy-modal-title-buy"><span>Buy</span> Now</p>
@@ -11,19 +11,18 @@
     <div class="buy-modal-top">
       <ul class="buy-modal-top-list">
         <li class="buy-modal-top-item">
-          <img src="../../img/modal_buy_now/nuts.jpg" alt="1" />
+          <img srcset="./img/modal_buy_now/nuts2x.jpg 2x, ./img/modal_buy_now/nuts3x.jpg 3x" src="./img/modal_buy_now/nuts.jpg" alt="1" />
           <div class="buy-modal-position-weight">100 g</div>
         </li>
         <li class="buy-modal-top-item">
-          <img src="../../img/modal_buy_now/praline.jpg" alt="2" />
+          <img srcset="./img/modal_buy_now/praline2x.jpg 2x, ./img/modal_buy_now/praline3x.jpg 3x" src="./img/modal_buy_now/praline.jpg" alt="2" />
           <div class="buy-modal-position-weight">200 g</div>
         </li>
         <li class="buy-modal-top-item">
-          <img src="../../img/modal_buy_now/chocolate.jpg" alt="3" />
+          <img srcset="./img/modal_buy_now/chocolate2x.jpg 2x, ./img/modal_buy_now/chocolate3x.jpg 3x" src="./img/modal_buy_now/chocolate.jpg" alt="3" />
           <div class="buy-modal-position-weight">300 g</div>
         </li>
-        <div></div>
-      </ul>
+        </ul>
     </div>
 
     <form class="buy-modal-form">
@@ -66,13 +65,14 @@
           type="tel"
           name="tel"
           id="tel"
-          class="buy-modal-form-input modal-tel-input"
+          class="buy-modal-form-input"
           placeholder="Phone number"
-          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          
         />
         <div class="buy-modal-tel-box">
           <svg class="buy-modal-tel-svg" width="20" height="25">
-            <use href="../../img/sprite.svg#icon-Mastercard"></use>
+            <use href="./img/sprite.svg#icon-UkrFlag"></use>
           </svg>
           <p>+380</p>
         </div>
@@ -81,22 +81,23 @@
       <div class="buy-modal-section">
         <label for="card" class="buy-modal-form-label">Card number</label>
         <input
-          type=""
+          type="tel"
           name="card-number card-number-svg"
           id="card"
           class="buy-modal-form-input"
           placeholder="Enter card"
-          required
-        />
-        <svg class="buy-modal-tel-svg" width="20" height="30">
-          <use href="../../img/sprite.svg#icon-UkrFlag"></use>
+          pattern="[0-9\s]{13,19}"
+          maxlength="19"
+          inputmode="tel" required/>
+        <svg class="buy-modal-card-svg" width="21" height="12">
+          <use href="./img/sprite.svg#icon-Mastercard"></use>
         </svg>
       </div>
 
       <div class="buy-modal-section">
         <label for="comment" class="buy-modal-form-label">Comment</label>
         <textarea
-          rows="5"
+          rows="10"
           name="comment"
           id="comment"
           class="buy-modal-form-input"
@@ -110,4 +111,3 @@
     </form>
   </div>
 </div>
-<script src="../../js/modal.js"></script>

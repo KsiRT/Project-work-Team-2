@@ -1,21 +1,150 @@
-/* body {
-  float: inline-end;
-}
-
-body:nth-last-child(1) {
-} */
-
 .sellers-section {
+  margin: 0 auto;
+  padding: 72px 20px;
 }
-.sellers-container {
-}
+
 .sellers-title {
+  font-family: 'Montserrat-600', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
-.sellers-list {
+
+.sellers-title span {
+  color: #fd9222;
+}
+
+.sellers-list img {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .sellers-item {
+  margin-bottom: 32px;
 }
 .sellers-item-text {
+  font-family: 'Montserrat-400', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  /* text-align: justify; */
 }
-.sellers-modal-but-now {
+.sellers-modal-buy-now {
+  margin: 0 auto;
+  display: block;
+  font-family: 'Montserrat-600', sans-serif;
+  font-size: 14px;
+  line-height: 1.21;
+  color: white;
+  background-color: #fd9222;
+  border: none;
+  border-radius: 100px;
+  min-width: 120px;
+  min-height: 41px;
+  padding: 0 auto;
+}
+
+.sellers-item:nth-last-child(3) {
+  display: none;
+}
+
+.sellers-modal-buy-now:hover,
+.sellers-modal-buy-now:focus {
+  background: #fcf1e0;
+  color: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+  .sellers-section {
+    max-width: 768px;
+    padding: 72px 32px;
+  }
+
+  .sellers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+    justify-content: space-between;
+  }
+
+  .sellers-list li:nth-child(2) {
+    order: 4;
+    margin-left: 0;
+  }
+
+  .sellers-list li:nth-last-child(1) {
+    order: 5;
+    margin-right: 0;
+  }
+
+  .sellers-list img {
+    min-width: 342px;
+    max-width: 344px;
+    height: 464px;
+  }
+
+  .sellers-item-text {
+    width: 306px;
+  }
+
+  .sellers-item,
+  .sellers-item img {
+    margin: 0 auto;
+  }
+
+  .sellers-title {
+    font-size: 24px;
+  }
+
+  .sellers-item-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .sellers-modal-buy-now {
+    font-size: 18px;
+    line-height: 22px;
+    min-width: 162px;
+    min-height: 50px;
+  }
+
+  .sellers-item {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sellers-section {
+    max-width: 1200px;
+    padding: 72px 32px;
+  }
+
+  .sellers-list {
+    gap: 32px 16px;
+  }
+
+  .sellers-item {
+    margin: 0;
+  }
+
+  .sellers-item:nth-last-child(3) {
+    display: block;
+  }
+
+  .sellers-list img {
+    min-width: 365px;
+    max-width: 368px;
+    height: 464px;
+  }
+
+  .sellers-item-text {
+    width: 407px;
+  }
 }
