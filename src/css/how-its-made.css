@@ -1,6 +1,5 @@
 .recept-section {
   padding-top: 72px;
-  padding-bottom: 72px;
 }
 .recept-container {
   max-width: 375px;
@@ -54,6 +53,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .recept-section {
+    padding-top: 100px;
+  }
   .recept-container {
     max-width: 654px;
   }

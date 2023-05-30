@@ -1,101 +1,105 @@
 .hero-section {
-    margin: 0 auto;
-    padding-bottom: 72px;
+  margin: 0 auto;
+  padding-top: 84px;
+  padding-bottom: 72px;
+  z-index: 2;
 }
 
 .hero-container {
-    border-radius: 30px;
-    max-width: 335px;
-    /* min-width: 335px; */
-    min-height: 620px;
-    max-height: 620px;
-    padding-right: 20px;
-    padding-left: 20px;
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/chocolate-hero1x.jpg);
+  border-radius: 30px;
+  max-width: 335px;
+  /* min-width: 335px; */
+  min-height: 620px;
+  max-height: 620px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../img/hero/chocolate-hero1x.jpg);
 }
 
 .hero-container-btns {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 395px 0px 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 395px 0 0 0;
 }
 
-.hero-hidden-title {}
-
 .hero-paragraph {
-    font-family: 'Montserrat-500';
-    font-style: normal;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
-    color: var(--snow-white);
-    margin-bottom: 32px;
+  font-family: 'Montserrat-500';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--snow-white);
+  margin-bottom: 32px;
 }
 
 .hero-btns-div {
-    display: flex;
-    gap: 14px;
-    margin-bottom: 32px;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
 }
 
 .buy-modal-btn {
-    font-family: 'Montserrat-600', sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.21;
-    color: var(--snow-white);
-    transition: color 100ms cubic-bezier(.11, .44, .82, .44);
-    transition: background-color 300ms cubic-bezier(.11, .44, .82, .44);
+  font-family: 'Montserrat-600', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--snow-white);
+  transition: color 100ms cubic-bezier(0.11, 0.44, 0.82, 0.44);
+  transition: background-color 300ms cubic-bezier(0.11, 0.44, 0.82, 0.44);
 }
 
 .hero-ahchor-button {
-    display: flex;
-    align-items: center;
-    font-family: 'Montserrat-600', sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.21;
-    color: var(--snow-white);
-    transition: border-color 3000ms cubic-bezier(.11, .44, .82, .44);
-    transition: color 3000ms cubic-bezier(.11, .44, .82, .44);
-    transition: background-color 300ms cubic-bezier(.11, .44, .82, .44);
-
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat-600', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--snow-white);
+  transition: border-color 3000ms cubic-bezier(0.11, 0.44, 0.82, 0.44);
+  transition: color 3000ms cubic-bezier(0.11, 0.44, 0.82, 0.44);
+  transition: background-color 300ms cubic-bezier(0.11, 0.44, 0.82, 0.44);
 }
 
 .hero-scroll-button {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    font-family: 'Montserrat-500', sans-serif;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    color: var(--snow-white);
-    padding: 5px 17px 10px 16px;
-    transition: color 300ms cubic-bezier(.11, .44, .82, .44);
-    transition: background-color 150ms cubic-bezier(.11, .44, .82, .44);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-family: 'Montserrat-500', sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: var(--snow-white);
+  padding: 5px 17px 10px 16px;
+  transition: color 300ms cubic-bezier(0.11, 0.44, 0.82, 0.44);
+  transition: background-color 150ms cubic-bezier(0.11, 0.44, 0.82, 0.44);
 }
 
 .hero-scroll-button:hover,
 .hero-scroll-button:focus {
-    background: #1E1823;
-    border-radius: 10px;
+  background: #1e1823;
+  border-radius: 10px;
 }
 
 .hero-scroll-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    height: 28px;
-    width: 28px;
-    background-color: var(--snow-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  background-color: var(--snow-white);
 }
 
 .hero-scroll-icon {
-    fill: var(--brand-color);
-    background-color: var(--snow-white);
-    border-radius: 50%;
+  fill: var(--brand-color);
+  background-color: var(--snow-white);
+  border-radius: 50%;
 }

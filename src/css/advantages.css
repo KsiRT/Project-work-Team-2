@@ -16,7 +16,11 @@
 
 .section-advantages {
   background-color: #1e1823;
-  padding: 20px 20px 36px 20px;
+}
+.adv-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 375px;
 }
 .title-advantages {
   font-family: 'Montserrat-600', sans-serif;
@@ -51,13 +55,13 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .section-advantages {
-    max-width: 768px;
+  .adv-container {
     padding: 50px 32px 50px 32px;
+    max-width: 768px;
   }
 
   .section-adv-list {
-    gap: 32px;
+    gap: 32px 60px;
     flex-wrap: wrap;
   }
   .adv-svg-wrapper-element {
@@ -71,6 +75,9 @@
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .section-advantages {
+    width: 100%;
+  }
+  .adv-container {
     max-width: 1200px;
     padding: 50px;
   }
@@ -92,5 +99,7 @@
     justify-content: center;
     gap: 70px;
     /* padding: 50px; */
+    max-width: 1100px;
+    margin: 0 auto;
   }
 }
