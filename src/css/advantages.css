@@ -74,14 +74,19 @@
     max-width: 1200px;
     padding: 50px;
   }
+  .adv-item {
+    position: relative;
+  }
 
   .adv-item:not(:last-child)::after {
     content: '';
     display: block;
-    width: 124px;
-    height: 2px;
+    width: 1px;
+    height: 124px;
+    right: -20px;
+    top: 70px;
     background-color: rgba(255, 255, 255, 0.5);
-    transform: rotate(90deg) translateX(-110px) translateY(-260px);
+    position: absolute;
   }
   .section-adv-list {
     justify-content: center;
