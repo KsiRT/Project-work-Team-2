@@ -1,5 +1,5 @@
 .prod-container {
-  padding-bottom: 72px;
+  padding: 72px 20px 0;
 }
 .prod-title {
   font-family: 'Montserrat-600', sans-serif;
@@ -80,6 +80,10 @@
 }
 /* ============================== */
 @media screen and (min-width: 768px) {
+  .prod-container {
+    max-width: 768px;
+    padding: 100px 32px 0;
+  }
   .prod-title {
     margin-bottom: 50px;
     font-size: 24px;
@@ -94,6 +98,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .prod-container {
+    max-width: 1200px;
+    padding: 128px 32px 0;
+  }
   .prod-list-container {
     max-width: 1136px;
   }
