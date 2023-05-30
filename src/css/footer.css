@@ -94,18 +94,6 @@
   margin-bottom: 32px;
 }
 
-/* .footer-activ::after {
-  display: inline-block;
-  content: '';
-  width: 24px;
-  height: 2px;
-  border: 1px solid var(--brand-color);
-  background-color: var(--brand-color);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 8px;
-} */
-
 .footer-site-nav {
   margin: 0;
 }
@@ -153,6 +141,19 @@
     /* margin-top: 0; */
     margin-bottom: 24px;
   }
+  .footer-activ::after {
+    display: block;
+    content: '';
+    width: 50%;
+    height: 1px;
+    border: 1px solid var(--brand-color);
+    border-radius: 50%;
+    margin-top: 8px;
+  }
+  .footer-activ:hover,
+  .footer-activ:focus {
+  }
+
   .footer-site-nav {
     display: flex;
     gap: 24px;
