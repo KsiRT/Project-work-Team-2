@@ -86,6 +86,10 @@
   letter-spacing: 0.02em;
   color: #111111;
   margin-top: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .title-curts {
   font-family: 'Montserrat-600', sans-serif;
