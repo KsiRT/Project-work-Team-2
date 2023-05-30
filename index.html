@@ -14,8 +14,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/Project-work-Team-2/assets/index-9f97a34c.js"></script>
-    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-ea5a16ee.css">
+    <script type="module" crossorigin src="/Project-work-Team-2/assets/index-77034b9a.js"></script>
+    <link rel="stylesheet" href="/Project-work-Team-2/assets/index-3cc2281d.css">
   </head>
   <body>
     <!--! Loads the specified .html file !-->
@@ -698,7 +698,7 @@
 </section>
 
     <section class="subscribe" id="subscribe-section">
-  <div class="container">
+  <div class="subscribe-container">
     <h2 class="title-subscribe">Explore our new chocolate first</h2>
     <p class="text-subscribe">
       From the velvety texture to the rich and complex flavor, our New Chocolate
@@ -711,7 +711,6 @@
     </button>
   </div>
 </section>
-<!-- <script src="../js/subscribe.js"></script> -->
 
     <footer class="footer" id="footer-section">
   <div class="container footer-wrap-container">
@@ -975,24 +974,26 @@
   <div class="window-subscribe">
     <button type="button" class="button-subscribe-close" data-modal-sub-close>
       <svg width="24" height="24" class="subscribe-icon">
-        <use href="../../img/sprite.svg#icon-close-btn"></use>
+        <use href="/Project-work-Team-2/assets/sprite-a88d66e4.svg#icon-close-btn"></use>
       </svg>
     </button>
     <div class="menu-subscribe">
       <h1 class="title-modal-menu">
         Explore our <span class="title-modal-span"> new chocolate</span> first!
       </h1>
-      <label class="subscribe-label">
-        <input
-          type="email"
-          name="user-email"
-          class="subscribe-input"
-          placeholder="Enter your email"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-          required
-        />
-      </label>
-      <button type="submit" class="button-subscribe-submit">Subscribe</button>
+      <form>
+        <label class="subscribe-label">
+          <input
+            type="email"
+            name="user-email"
+            class="subscribe-input"
+            placeholder="Enter your email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+        </label>
+        <button type="submit" class="button-subscribe-submit">Subscribe</button>
+      </form>
     </div>
   </div>
 </div>
