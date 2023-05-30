@@ -1,6 +1,6 @@
 .backdrop {
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
@@ -20,13 +20,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 311px;
+  min-width: 311px;
   max-height: 100vh;
   transform: translate(-50%, -50%) scale(1);
   padding: 32px 24px;
   background-color: #fafafa;
   border-radius: 15px;
   overflow-y: auto;
+  z-index: inherit;
 }
 
 .buy-modal-close-btn {
@@ -287,7 +288,7 @@
   }
 
   /* TODO Check not last child */
- 
+
   .buy-modal-tel-box p {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -296,7 +297,6 @@
     font-family: 'Montserrat-500', sans-serif;
     font-size: 18px;
     line-height: 22px;
-
   }
 
   /* Check not last child */
@@ -316,10 +316,9 @@
 
   .buy-modal-card-svg {
     right: 25px;
-    }
+  }
   .buy-modal-submit-btn {
     margin-top: -30px;
-
   }
 
   .buy-modal-submit-btn {
