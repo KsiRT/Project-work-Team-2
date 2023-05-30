@@ -2,7 +2,7 @@
 } */
 .reviews-container {
   margin: 0 auto;
-  padding-bottom: 72px;
+  padding: 72px 20px;
 }
 .review-title {
   font-family: 'Montserrat-600', sans-serif;
@@ -111,6 +111,7 @@
 @media screen and (min-width: 768px) {
   .reviews-container {
     max-width: 768px;
+    padding: 100px 32px;
   }
   .review-title {
     margin-bottom: 50px;
@@ -129,6 +130,7 @@
 @media screen and (min-width: 1200px) {
   .reviews-container {
     max-width: 1200px;
+    padding: 128px 32px;
   }
   .reviews-cards-container {
     max-width: 1136px;
