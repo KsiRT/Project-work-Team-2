@@ -149,9 +149,10 @@
     border: 1px solid var(--brand-color);
     border-radius: 50%;
     margin-top: 8px;
+    opacity: 0;
   }
-  .footer-activ:hover,
-  .footer-activ:focus {
+  .footer-link-anchor:hover:after {
+    opacity: 1;
   }
 
   .footer-site-nav {
