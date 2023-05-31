@@ -1,6 +1,11 @@
 .sellers-section {
+  padding-top: 72px;
+}
+.sellers-container {
+  max-width: 375px;
   margin: 0 auto;
-  padding: 72px 20px 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .sellers-title {
@@ -66,8 +71,12 @@
 
 @media screen and (min-width: 768px) {
   .sellers-section {
+    padding-top: 100px;
+  }
+  .sellers-container {
     max-width: 768px;
-    padding: 100px 32px 0;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .sellers-list {
@@ -125,8 +134,10 @@
 
 @media screen and (min-width: 1200px) {
   .sellers-section {
+    padding-top: 128px;
+  }
+  .sellers-container {
     max-width: 1200px;
-    padding: 72px 32px 0;
   }
 
   .sellers-list {
@@ -148,6 +159,6 @@
   }
 
   .sellers-item-text {
-    width: 407px;
+    max-width: 407px;
   }
 }

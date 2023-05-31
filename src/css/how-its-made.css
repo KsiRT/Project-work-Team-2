@@ -70,6 +70,8 @@
   }
   .recept-container {
     max-width: 654px;
+    padding-left: 77px;
+    padding-right: 77px;
   }
 
   .recept-wrap {
@@ -78,7 +80,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .recept-section {
+    padding-top: 128px;
+  }
   .recept-container {
+    padding-left: 32px;
+    padding-right: 32px;
     max-width: 1176px;
     display: flex;
     gap: 20px;

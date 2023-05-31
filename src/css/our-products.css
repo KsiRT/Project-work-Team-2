@@ -1,6 +1,11 @@
+.prod-section {
+  padding-top: 72px;
+}
 .prod-container {
   margin: 0 auto;
-  padding: 72px 20px 0;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .prod-title {
   font-family: 'Montserrat-600', sans-serif;
@@ -81,9 +86,13 @@
 }
 /* ============================== */
 @media screen and (min-width: 768px) {
+  .prod-section {
+    padding-top: 100px;
+  }
   .prod-container {
     max-width: 768px;
-    padding: 100px 32px 0;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .prod-title {
     margin-bottom: 50px;
@@ -99,9 +108,11 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .prod-section {
+    padding-top: 128px;
+  }
   .prod-container {
     max-width: 1200px;
-    padding: 128px 32px 0;
   }
   .prod-list-container {
     max-width: 1136px;

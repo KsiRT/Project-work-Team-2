@@ -1,8 +1,10 @@
-/* .reviews {
-} */
+.reviews {
+  padding: 72px 0;
+}
 .reviews-container {
   margin: 0 auto;
-  padding: 72px 20px;
+  max-width: 375px;
+  padding: 0 20px;
 }
 .review-title {
   font-family: 'Montserrat-600', sans-serif;
@@ -17,7 +19,7 @@
   color: var(--brand-color);
 }
 .reviews-cards-container {
-  max-width: 335px;
+  width: 100%;
 }
 .reviews-card {
   max-width: 335px;
@@ -109,9 +111,12 @@
   background-color: var(--brand-color);
 }
 @media screen and (min-width: 768px) {
+  .reviews {
+    padding: 100px 0;
+  }
   .reviews-container {
     max-width: 768px;
-    padding: 100px 32px;
+    padding: 0 32px;
   }
   .review-title {
     margin-bottom: 50px;
@@ -128,9 +133,11 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .reviews {
+    padding: 128px 0;
+  }
   .reviews-container {
     max-width: 1200px;
-    padding: 128px 32px;
   }
   .reviews-cards-container {
     max-width: 1136px;

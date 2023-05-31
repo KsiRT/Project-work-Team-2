@@ -4,10 +4,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 62px 0;
 }
 
 .subscribe-container {
-  padding: 62px 20px;
+  padding: 0 20px;
   text-align: center;
   max-width: 375px;
   margin: 0 auto;
@@ -59,10 +60,11 @@
 @media screen and (min-width: 768px) {
   .subscribe {
     background-image: url(../img/Subcribe-pic/Subcribe2.jpg);
+    padding: 72px 0;
   }
   .subscribe-container {
     max-width: 768px;
-    padding: 72px 150px;
+    padding: 0 150px;
   }
   .title-subscribe {
     font-size: 24px;
@@ -84,5 +86,6 @@
   }
   .subscribe-container {
     max-width: 1200px;
+    padding: 0 366px;
   }
 }
