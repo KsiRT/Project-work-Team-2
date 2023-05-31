@@ -3,6 +3,8 @@
   padding-top: 84px;
   padding-bottom: 72px;
   z-index: 2;
+  padding-left: 4px;
+  padding-right: 3px;
 }
 
 .hero-container {
