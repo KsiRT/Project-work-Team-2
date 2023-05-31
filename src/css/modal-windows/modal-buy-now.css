@@ -205,7 +205,7 @@
 
 #comment {
   height: 100px;
-  resize: vertical;
+  resize: none;
   padding-top: 16px;
 }
 
@@ -287,7 +287,7 @@
   }
 
   /* TODO Check not last child */
- 
+
   .buy-modal-tel-box p {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -296,7 +296,6 @@
     font-family: 'Montserrat-500', sans-serif;
     font-size: 18px;
     line-height: 22px;
-
   }
 
   /* Check not last child */
@@ -316,10 +315,9 @@
 
   .buy-modal-card-svg {
     right: 25px;
-    }
+  }
   .buy-modal-submit-btn {
     margin-top: -30px;
-
   }
 
   .buy-modal-submit-btn {
