@@ -5,6 +5,13 @@
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url(../img/Subcribe-pic/Subcribe@2x.jpg);
+  }
+}
 
 .subscribe-container {
   padding: 62px 20px;
@@ -60,6 +67,13 @@
   .subscribe {
     background-image: url(../img/Subcribe-pic/Subcribe2.jpg);
   }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../img/Subcribe-pic/Subcribe2@2x.jpg);
+    }
+  }
   .subscribe-container {
     max-width: 768px;
     padding: 72px 150px;
@@ -81,6 +95,13 @@
 @media screen and (min-width: 1200px) {
   .subscribe {
     background-image: url(../img/Subcribe-pic/Subcribe3.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../img/Subcribe-pic/Subcribe3@2x.jpg);
+    }
   }
   .subscribe-container {
     max-width: 1200px;
