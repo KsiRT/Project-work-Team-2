@@ -16,10 +16,11 @@
 
 .section-advantages {
   background-color: #1e1823;
+  padding: 20px 0;
 }
 .advantages-container {
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
   max-width: 375px;
 }
 .title-advantages {
@@ -55,8 +56,11 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+  .section-advantages {
+    padding: 50px 0;
+  }
   .advantages-container {
-    padding: 50px 32px 50px 32px;
+    padding: 0 32px;
     max-width: 768px;
   }
 
@@ -75,11 +79,12 @@
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .section-advantages {
+    padding: 50px 0;
     width: 100%;
   }
   .advantages-container {
     max-width: 1200px;
-    padding: 50px;
+    padding: 0 50px;
   }
   .adv-item {
     position: relative;
