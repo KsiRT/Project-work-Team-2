@@ -206,7 +206,7 @@
 
 #comment {
   height: 100px;
-  resize: vertical;
+  resize: none;
   padding-top: 16px;
 }
 
