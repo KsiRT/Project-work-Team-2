@@ -150,6 +150,6 @@
   }
 
   .sellers-item-text {
-    width: 407px;
+    max-width: 407px;
   }
 }
