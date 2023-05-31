@@ -20,6 +20,13 @@
   overflow-y: auto;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .window-subscribe {
+    background-image: url(../../img/Subcribe-pic/Sub-Mod1@2x.jpg);
+  }
+}
 .button-subscribe-close {
   top: 21px;
   right: 20px;
@@ -111,6 +118,13 @@
     width: 538px;
     height: 412px;
     background-image: url(../../img/Subcribe-pic/Sub-Mod2.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .window-subscribe {
+      background-image: url(../../img/Subcribe-pic/Sub-Mod2@2x.jpg);
+    }
   }
   .button-subscribe-close {
     top: 31px;
