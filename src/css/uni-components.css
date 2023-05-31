@@ -1,6 +1,9 @@
+.uni-section {
+  padding-top: 72px;
+}
 .uni-container {
   max-width: 375px;
-  padding: 72px 20px 0;
+  padding: 0 20px;
   margin: 0 auto;
 }
 .img-components-chocolate {
@@ -159,9 +162,12 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+  .uni-section {
+    padding-top: 100px;
+  }
   .uni-container {
     max-width: 768px;
-    padding: 100px 32px 0;
+    padding: 0 32px;
   }
   .title-components {
     width: 411px;
@@ -190,6 +196,9 @@
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
+  .uni-section {
+    padding-top: 128px;
+  }
   .uni-container {
     max-width: 1200px;
   }
